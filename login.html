@@ -7,22 +7,52 @@
     <title>Sistem Penyuluhan</title>
     <link rel="stylesheet" href="/public/css/tailwind.css" />
   </head>
-  <body>
-    <!-- hapus aja -->
-    <div
-      class="
-        content
-        container
-        mx-auto
-        bg-greencolor
-        h-screen
-        flex
-        justify-center
-        items-center
-      "
-    >
-      <h1 class="text-xl">Ini login bro. Hapus aja</h1>
-    </div>
-    <!-- end hapus -->
+  <body class="bg-white  h-screen">
+    <div class="w-full flex flex-wrap">
+
+      <!-- Login Section -->
+      <div class="w-full md:w-1/2 flex flex-col">
+          
+          <div class=" p-0 md:w-4/4">
+          <div class="flex justify-center md:justify-start pt-28 pl-28 md:-mb-24">
+              <main class="bg-white w-4/4 mx-auto p-8 md:p-12 my-10 rounded-lg shadow-2xl">
+                  <section>
+                     <p class="text-black font-bold pt-2">Sing in</p>
+                  </section>
+
+                      <section class="mt-10">
+                          <form class="flex flex-col" method="post" action="#" >
+                              <div class="mb-6 pt-3 rounded bg-gray-200">
+                                  <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="username">Username</label>
+                                  <input type="text" id="email" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 
+                                  border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3">
+                              </div>
+                              <div class="mb-6 pt-3 rounded bg-gray-200">
+                                  <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="password">Password</label>
+                                  <input type="password" id="password" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 
+                                  border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3">
+                              </div>
+                              <div class="flex justify-end">
+                                  <a href="#" class="text-sm text-purple-600 hover:text-purple-700 hover:underline mb-6">Forgot your password?</a>
+                              </div>
+                              <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl 
+                              transition duration-200" type="submit">Sign In</button>
+                          </form>
+                          
+                      </section>
+              </main>
+              
+          </div>
+
+          <div class="flex flex-col justify-center md:justify-start my-auto md:pt-0 md:px-24 lg:px-32">
+            
+             </div>
+          </div>
+
+      </div>
+      <div class="w-1/2 h-screen bg-greencolor">
+      </div>
+  </div>
+
   </body>
 </html>
