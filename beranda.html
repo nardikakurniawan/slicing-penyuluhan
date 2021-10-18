@@ -7,23 +7,107 @@
     <title>Beranda</title>
     <link rel="stylesheet" href="/public/css/tailwind.css" />
   </head>
+  <style>
+    .user-text {
+      background: transparent;
+      color: rgb(31, 31, 31);
+      outline: 0;
+      border: 1;
+      width: 16.6%;
+      border-bottom: 1px solid rgb(90, 90, 90);
+    }
+  </style>
   <body>
-    <div class="container-sm mx-auto">
-      <nav class="md:flex items-center justify-between bg-greencolor-dark h-28">
-        <div class="md:flex items-center ml-9">
-          <img
-            src="/public/img/Kementerian_Agama_new_logo@2x.png"
-            width="50"
-            alt="logo"
-          />
-            <h1 class="text-white text-center ml-5">KEMENTRIAN AGAMA KEPRI</br>SISTEM MONITORING PENYULUH AGAMA ISLAM</h1>
-          
-          
-          <div>
-            <a class=" ml-96 text-right text-gray-100" href="">Log out</a>
+    <div class="">
+      <nav
+        class="
+          bg-gradient-to-t
+          from-pmbgreen-dark
+          to-pmbgreen
+          h-32
+          flex
+          content-center
+        "
+      >
+        <div class="container mx-auto flex items-center justify-between">
+          <div class="flex">
+            <div class="mr-4">
+              <img src="/public/img/logo.png" alt="logo" class="w-27" />
+            </div>
+
+            <div class="">
+              <h1 class="text-white uppercase text-3xl font-primary font-bold">
+                Kementrian Agama Kepri
+              </h1>
+              <h5
+                class="
+                  text-white
+                  uppercase
+                  text-xs
+                  font-primary font-bold
+                  tracking-widest
+                "
+              >
+                Sistem Monitoring Penyuluhan Agama Islam
+              </h5>
+            </div>
           </div>
+
+          <a href="" class="flex items-center text-white"
+            ><img
+              src="/public/img/icont-user.svg"
+              alt="icon user"
+              class="mr-4"
+            />
+            Log Out</a
+          >
         </div>
       </nav>
+    </div>
+
+    <div
+      class="
+        sidebar
+        bg-white
+        w-64
+        space-y-6
+        py-9
+        absolute
+        md:relative md:translate-x-0
+        transition
+        duration-200
+        ease-in-out
+      "
+    >
+      <!-- logo -->
+      <a
+        href=""
+        class="text-black flex justify-center items-center space-x-2 px-4"
+      >
+        <img src="/public/img/icon.svg" width="50" class="mr-5" alt="" />
+        <span class="text-2xl font-extrabold">Fahrizal</span>
+      </a>
+    </div>
+
+    <div class="user-text"></div>
+
+    <div class="mt-7">
+      <a
+        href=""
+        class="
+          flex
+          items-center
+          justify-center
+          p-2
+          bg-pmbgreen-dark
+          hover:bg-pmbgreen-dark
+          w-1/6
+          rounded
+          text-white
+          hover:text-white
+        "
+        ><img src="/public/img/beranda.svg" alt="icon" class="mr-6" />Beranda
+      </a>
     </div>
   </body>
 </html>
