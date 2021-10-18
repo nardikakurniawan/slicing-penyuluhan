@@ -4,10 +4,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        greencolor: {
-          DEFAULT: "#188D32",
-          light: "#fdfefd",
-          dark: "#063811",
+        pmbgreen: {
+          DEFAULT: "#126E26",
+          dark: "#093713",
+          btn: "#22A527",
+        },
+        pmbred: {
+          DEFAULT: "#FF1900",
+          btn: "#CB374B",
+        },
+        pmbblue: {
+          // DEFAULT: "#FF1900",
+          btn: "#3340AE",
         },
       },
     },
