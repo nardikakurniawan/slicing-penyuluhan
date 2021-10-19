@@ -13,8 +13,23 @@
       color: rgb(31, 31, 31);
       outline: 0;
       border: 1;
-      width: 16.6%;
+      width: 100%;
+
       border-bottom: 1px solid rgb(90, 90, 90);
+    }
+    ul li:hover a {
+      padding-left: 100px;
+      background: #f3f3f3;
+      color: rgb(0, 0, 0);
+    }
+    .sidebar {
+      position: fixed;
+      left: 0px;
+      width: 300px;
+
+      height: 5rem;
+      background: #ffffff;
+      transition: all 0.5s ease;
     }
   </style>
   <body>
@@ -65,49 +80,145 @@
       </nav>
     </div>
 
-    <div
-      class="
-        sidebar
-        bg-white
-        w-64
-        space-y-6
-        py-9
-        absolute
-        md:relative md:translate-x-0
-        transition
-        duration-200
-        ease-in-out
-      "
-    >
-      <!-- logo -->
-      <a
-        href=""
-        class="text-black flex justify-center items-center space-x-2 px-4"
-      >
-        <img src="/public/img/icon.svg" width="50" class="mr-5" alt="" />
-        <span class="text-2xl font-extrabold">Fahrizal</span>
-      </a>
-    </div>
-
-    <div class="user-text"></div>
-
-    <div class="mt-7">
-      <a
-        href=""
-        class="
-          flex
-          items-center
-          justify-center
-          p-2
-          bg-pmbgreen-dark
-          hover:bg-pmbgreen-dark
-          w-1/6
-          rounded
-          text-white
-          hover:text-white
-        "
-        ><img src="/public/img/beranda.svg" alt="icon" class="mr-6" />Beranda
-      </a>
-    </div>
+    <div class="sidebar">
+      <div class="top flex items-center h-32 mr-7  text-textB-second justify-center">
+        <img src="/public/img/icon.svg" width="50" alt="" class="mr-8" />Admin
+      </div>
+      <div class="user-text"></div>
+      <div class="mt-9">
+        <a
+          href=""
+          class="
+            flex
+            items-center
+            p-2
+            bg-beranda-btn
+            hover:bg-pmbgreen-dark
+            w-25
+            rounded
+            text-lg text-textB-text
+            hover:text-white
+          "
+          ><img src="/public/img/beranda.svg" alt="icon" class="mr-10 ml-11" />Beranda
+        </a>
+        <a
+          href=""
+          class="
+            flex
+            items-center
+            p-2
+            mt-3
+            bg-beranda-btn
+            hover:bg-pmbgreen-dark
+            w-25
+            rounded
+            text-textB-text text-lg
+            hover:text-white
+          "
+          ><img
+            src="/public/img/penyuluh.svg"
+            alt="penyuluh"
+            class="mr-10 ml-11"
+          />Penyuluh
+        </a>
+        <a
+          href=""
+          class="
+            flex
+            items-center
+            p-2
+            mt-3
+            bg-beranda-btn
+            hover:bg-pmbgreen-dark
+            w-25
+            rounded
+            text-textB-text text-lg
+            hover:text-white
+          "
+          ><img
+            src="/public/img/majelis.svg"
+            alt="penyuluh"
+            class="mr-10 ml-11"
+          />Majelis
+        </a>
+        <a
+          href=""
+          class="
+            flex
+            items-center
+            p-2
+            mt-3
+            bg-beranda-btn
+            hover:bg-pmbgreen-dark
+            w-25
+            rounded
+            text-textB-text text-lg
+            hover:text-white
+          "
+          ><img
+            src="/public/img/jadwal.svg"
+            alt="penyuluh"
+            class="mr-10 ml-11"
+          />Jadwal
+        </a>
+        <a
+          href=""
+          class="
+            flex
+            items-center
+            p-2
+            mt-3
+            bg-beranda-btn
+            hover:bg-pmbgreen-dark
+            w-25
+            rounded
+            text-textB-text text-lg
+            hover:text-white
+          "
+          ><img
+            src="/public/img/berita.svg"
+            alt="penyuluh"
+            class="mr-10 ml-11"
+          />Berita
+        </a>
+        <a
+          href=""
+          class="
+            flex
+            items-center
+            
+            p-2
+            mt-3
+            bg-beranda-btn
+            hover:bg-pmbgreen-dark
+            w-25
+            rounded
+            text-textB-text text-lg
+            hover:text-white
+          "
+          ><img src="/public/img/slide.svg" alt="slide" class="mr-10 ml-11" />Gambar Slide
+        </a>
+        <a
+          href=""
+          class="
+            flex
+            items-center
+            p-2
+            mt-3
+            bg-beranda-btn
+            hover:bg-pmbgreen-dark
+            w-25
+            rounded
+            text-textB-text text-lg
+            hover:text-white
+          "
+          ><img
+            src="/public/img/laporan.svg"
+            alt="penyuluh"
+            class="mr-10 ml-11"
+          />Laporan
+        </a>
+      </div>
+     
   </body>
 </html>

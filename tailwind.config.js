@@ -17,7 +17,14 @@ module.exports = {
           // DEFAULT: "#FF1900",
           btn: "#3340AE",
         },
-        
+        beranda:{
+          btn: "#EBF3F1"
+        },
+        textB:{
+          text:"#408321",
+          second:"#666666"
+        },
+       
       },
     },
   },
