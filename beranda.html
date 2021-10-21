@@ -23,13 +23,8 @@
       color: rgb(0, 0, 0);
     }
     .sidebar {
-      position: fixed;
-      left: 0px;
       width: 300px;
-
-      height: 5rem;
       background: #ffffff;
-      transition: all 0.5s ease;
     }
   </style>
   <body>
@@ -80,145 +75,192 @@
       </nav>
     </div>
 
-    <div class="sidebar">
-      <div class="top flex items-center h-32 mr-7  text-textB-second justify-center">
-        <img src="/public/img/icon.svg" width="50" alt="" class="mr-8" />Admin
+    <div class="flex h-screen w-full">
+      <!--Start SideBar-->
+      <div class="sidebar">
+        <!--Start logo -->
+        <div class="flex justify-items-start">
+          <div
+            class="h-32 rounded-full border-white mt-2 flex items-center ml-16"
+          >
+            <img
+              src="/public/img/icon.svg"
+              class="rounded-full w-auto mr-6"
+            />admin
+          </div>
+        </div>
+        <div class="user-text"></div>
+        <div class="mt-9">
+          <a
+            href=""
+            class="
+              flex
+              items-center
+              p-2
+              bg-beranda-btn
+              hover:bg-pmbgreen-dark
+              w-25
+              rounded
+              text-lg text-textB-text
+              hover:text-white
+            "
+            ><img
+              src="/public/img/beranda.svg"
+              alt="icon"
+              class="mr-10 ml-11"
+            />Beranda
+          </a>
+          <a
+            href=""
+            class="
+              flex
+              items-center
+              p-2
+              mt-3
+              bg-beranda-btn
+              hover:bg-pmbgreen-dark
+              w-25
+              rounded
+              text-textB-text text-lg
+              hover:text-white
+            "
+            ><img
+              src="/public/img/penyuluh.svg"
+              alt="penyuluh"
+              class="mr-10 ml-11"
+            />Penyuluh
+          </a>
+          <a
+            href=""
+            class="
+              flex
+              items-center
+              p-2
+              mt-3
+              bg-beranda-btn
+              hover:bg-pmbgreen-dark
+              w-25
+              rounded
+              text-textB-text text-lg
+              hover:text-white
+            "
+            ><img
+              src="/public/img/majelis.svg"
+              alt="penyuluh"
+              class="mr-10 ml-11"
+            />Majelis
+          </a>
+          <a
+            href=""
+            class="
+              flex
+              items-center
+              p-2
+              mt-3
+              bg-beranda-btn
+              hover:bg-pmbgreen-dark
+              w-25
+              rounded
+              text-textB-text text-lg
+              hover:text-white
+            "
+            ><img
+              src="/public/img/jadwal.svg"
+              alt="penyuluh"
+              class="mr-10 ml-11"
+            />Jadwal
+          </a>
+          <a
+            href=""
+            class="
+              flex
+              items-center
+              p-2
+              mt-3
+              bg-beranda-btn
+              hover:bg-pmbgreen-dark
+              w-25
+              rounded
+              text-textB-text text-lg
+              hover:text-white
+            "
+            ><img
+              src="/public/img/berita.svg"
+              alt="penyuluh"
+              class="mr-10 ml-11"
+            />Berita
+          </a>
+          <a
+            href=""
+            class="
+              flex
+              items-center
+              p-2
+              mt-3
+              bg-beranda-btn
+              hover:bg-pmbgreen-dark
+              w-25
+              rounded
+              text-textB-text text-lg
+              hover:text-white
+            "
+            ><img
+              src="/public/img/slide.svg"
+              alt="slide"
+              class="mr-10 ml-11"
+            />Gambar Slide
+          </a>
+          <a
+            href=""
+            class="
+              flex
+              items-center
+              p-2
+              mt-3
+              bg-beranda-btn
+              hover:bg-pmbgreen-dark
+              w-25
+              rounded
+              text-textB-text text-lg
+              hover:text-white
+            "
+            ><img
+              src="/public/img/laporan.svg"
+              alt="penyuluh"
+              class="mr-10 ml-11"
+            />Laporan
+          </a>
+        </div>
       </div>
-      <div class="user-text"></div>
-      <div class="mt-9">
-        <a
-          href=""
-          class="
-            flex
-            items-center
-            p-2
-            bg-beranda-btn
-            hover:bg-pmbgreen-dark
-            w-25
-            rounded
-            text-lg text-textB-text
-            hover:text-white
-          "
-          ><img src="/public/img/beranda.svg" alt="icon" class="mr-10 ml-11" />Beranda
-        </a>
-        <a
-          href=""
-          class="
-            flex
-            items-center
-            p-2
-            mt-3
-            bg-beranda-btn
-            hover:bg-pmbgreen-dark
-            w-25
-            rounded
-            text-textB-text text-lg
-            hover:text-white
-          "
-          ><img
-            src="/public/img/penyuluh.svg"
-            alt="penyuluh"
-            class="mr-10 ml-11"
-          />Penyuluh
-        </a>
-        <a
-          href=""
-          class="
-            flex
-            items-center
-            p-2
-            mt-3
-            bg-beranda-btn
-            hover:bg-pmbgreen-dark
-            w-25
-            rounded
-            text-textB-text text-lg
-            hover:text-white
-          "
-          ><img
-            src="/public/img/majelis.svg"
-            alt="penyuluh"
-            class="mr-10 ml-11"
-          />Majelis
-        </a>
-        <a
-          href=""
-          class="
-            flex
-            items-center
-            p-2
-            mt-3
-            bg-beranda-btn
-            hover:bg-pmbgreen-dark
-            w-25
-            rounded
-            text-textB-text text-lg
-            hover:text-white
-          "
-          ><img
-            src="/public/img/jadwal.svg"
-            alt="penyuluh"
-            class="mr-10 ml-11"
-          />Jadwal
-        </a>
-        <a
-          href=""
-          class="
-            flex
-            items-center
-            p-2
-            mt-3
-            bg-beranda-btn
-            hover:bg-pmbgreen-dark
-            w-25
-            rounded
-            text-textB-text text-lg
-            hover:text-white
-          "
-          ><img
-            src="/public/img/berita.svg"
-            alt="penyuluh"
-            class="mr-10 ml-11"
-          />Berita
-        </a>
-        <a
-          href=""
-          class="
-            flex
-            items-center
-            
-            p-2
-            mt-3
-            bg-beranda-btn
-            hover:bg-pmbgreen-dark
-            w-25
-            rounded
-            text-textB-text text-lg
-            hover:text-white
-          "
-          ><img src="/public/img/slide.svg" alt="slide" class="mr-10 ml-11" />Gambar Slide
-        </a>
-        <a
-          href=""
-          class="
-            flex
-            items-center
-            p-2
-            mt-3
-            bg-beranda-btn
-            hover:bg-pmbgreen-dark
-            w-25
-            rounded
-            text-textB-text text-lg
-            hover:text-white
-          "
-          ><img
-            src="/public/img/laporan.svg"
-            alt="penyuluh"
-            class="mr-10 ml-11"
-          />Laporan
-        </a>
+      <div class="grid grid-cols-1 gap-2 lg:grid-cols-2">
+        <div class="w-full h-80 mt-10 ml-20 rounded shadow-lg text-center">
+          <div class="flex justify-center">
+            <img
+              class="m-9 mt-3 justify-center"
+              src="/public/img/chart.svg"
+              width="300"
+              alt=""
+            />
+          </div>
+          <p class="text-textB-grafik font-bold">
+            Jumlah Penyuluhan Dalam Setahun
+          </p>
+        </div>
+        <div class="w-full h-80 mt-10 ml-28 rounded shadow-lg text-center">
+          <p class="text-textB-grafik font-bold">Jumlah Majelis Pertahun</p>
+          <div class="flex justify-center">
+            <img
+              class="m-8 w-4/4 mt-4"
+              src="/public/img/chart2.svg"
+              width="290"
+              alt=""
+            />
+          </div>
+          <div class="-ml-32">
+            <div class="h-80 mt-20 -ml-96 rounded shadow-xl"></div>
+          </div>
+        </div>
       </div>
-     
+    </div>
   </body>
 </html>

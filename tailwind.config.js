@@ -22,8 +22,12 @@ module.exports = {
         },
         textB:{
           text:"#408321",
-          second:"#666666"
+          second:"#666666",
+          grafik: "#106B24"
         },
+      fontFamily:{
+        primary:["Tahomo"],
+      }
        
       },
     },
