@@ -8,19 +8,596 @@
     <link rel="stylesheet" href="/public/css/tailwind.css" />
   </head>
   <body>
-    <div
-      class="
-        content
-        container
-        mx-auto
-        bg-pmbgreen
-        h-screen
-        flex
-        justify-center
-        items-center
-      "
+    <section class="navbar">
+      <nav
+        class="
+          bg-gradient-to-t
+          from-pmbgreen-dark
+          to-pmbgreen
+          h-32
+          flex
+          content-center
+        "
+      >
+        <div class="container mx-auto flex items-center">
+          <div class="">
+            <img src="/public/img/logo.png" alt="logo" class="w-3/4" />
+          </div>
+
+          <div class="">
+            <h1 class="text-white uppercase text-3xl font-primary font-bold">
+              Kementrian Agama Kepri
+            </h1>
+            <h5
+              class="
+                text-white
+                uppercase
+                text-xs
+                font-primary font-bold
+                tracking-widest
+              "
+            >
+              Sistem Monitoring Penyuluhan Agama Islam
+            </h5>
+          </div>
+        </div>
+      </nav>
+      <nav
+        class="
+          flex
+          items-center
+          bg-gradient-to-t
+          from-pmbgreen-dark
+          to-pmbgreen
+          h-12
+        "
+      >
+        <div class="container mx-auto flex justify-between">
+          <ul class="flex md:w-3/12 sm:w-2/5 justify-between items-center">
+            <li><a href="#" class="text-white uppercase">Beranda</a></li>
+            <li><a href="#" class="text-white uppercase">Berita</a></li>
+            <li><a href="#" class="text-white uppercase">jadwal</a></li>
+          </ul>
+
+          <form class="flex items-center">
+            <input
+              type="text"
+              placeholder="Search.."
+              id="input-search"
+              name="search"
+              class="
+                box-border
+                bg-gray-200 bg-opacity-30
+                rounded-sm
+                focus:outline-none
+                mr-1
+                p-1
+                font-medium
+                hidden
+              "
+            />
+            <button type="button" id="btn-search">
+              <img src="/public/img/icon-search.svg" alt="" class="w-5 mr-8" />
+            </button>
+
+            <a href="" class="flex uppercase text-white"
+              ><img
+                src="/public/img/icon-user-circle.svg"
+                alt=""
+                class="w-5 mr-4"
+              />Login</a
+            >
+          </form>
+        </div>
+      </nav>
+    </section>
+
+    <section class="content mt-14">
+      <div class="container mx-auto">
+        <div class="grid md:grid-cols-3 md:gap-4">
+          <div class="h-64 col-span-2 grid grid-rows-3 grid-flow-col gap-4">
+            <div class="w-50 h-52">
+              <div
+                class="
+                  carousel
+                  relative
+                  rounded
+                  overflow-hidden
+                  w-11/12
+                  shadow-xl
+                "
+              >
+                <div class="carousel-inner relative overflow-hidden w-full">
+                  <!--Slide 1-->
+
+                  <input
+                    class="carousel-open"
+                    type="radio"
+                    id="carousel-1"
+                    name="carousel"
+                    aria-hidden="true"
+                    hidden
+                    checked="checked"
+                  />
+
+                  <div class="carousel-item absolute opacity-0 bg-center">
+                    <img
+                      src="/public/img/news-1.jpg"
+                      alt=""
+                      class="w-full h-99"
+                    />
+                  </div>
+
+                  <label
+                    for="carousel-3"
+                    class="
+                      control-1
+                      w-10
+                      h-10
+                      ml-2
+                      md:ml-10
+                      absolute
+                      cursor-pointer
+                      hidden
+                      rounded-full
+                      bg-black
+                      hover:bg-pmbgreen-dark
+                      leading-tight
+                      z-10
+                      inset-y-0
+                      left-0
+                      my-auto
+                    "
+                  >
+                    <img
+                      src="/public/img/Icon-arrow-back-white.svg"
+                      class="mx-auto my-auto mt-2 w-2 h-6"
+                    />
+                  </label>
+
+                  <label
+                    for="carousel-2"
+                    class="
+                      next
+                      control-1
+                      w-10
+                      h-10
+                      mr-2
+                      md:mr-10
+                      absolute
+                      cursor-pointer
+                      hidden
+                      rounded-full
+                      bg-black
+                      hover:bg-pmbgreen-dark
+                      leading-tight
+                      z-10
+                      inset-y-0
+                      right-0
+                      my-auto
+                    "
+                  >
+                    <img
+                      src="/public/img/Icon-arrow-forward-white.svg"
+                      class="mx-auto my-auto mt-2 w-2 h-6"
+                    />
+                  </label>
+
+                  <!--Slide 2-->
+                  <input
+                    class="carousel-open"
+                    type="radio"
+                    id="carousel-2"
+                    name="carousel"
+                    aria-hidden="true"
+                    hidden=""
+                  />
+                  <div class="carousel-item absolute opacity-0 bg-center">
+                    <img
+                      src="/public/img/news-2.jpg"
+                      alt=""
+                      class="w-full h-99"
+                    />
+                  </div>
+                  <label
+                    for="carousel-1"
+                    class="
+                      control-2
+                      w-10
+                      h-10
+                      ml-2
+                      md:ml-10
+                      absolute
+                      cursor-pointer
+                      hidden
+                      rounded-full
+                      bg-black
+                      hover:bg-pmbgreen-dark
+                      leading-tight
+                      z-10
+                      inset-y-0
+                      left-0
+                      my-auto
+                    "
+                  >
+                    <img
+                      src="/public/img/Icon-arrow-back-white.svg"
+                      class="mx-auto my-auto mt-2 w-2 h-6"
+                    />
+                  </label>
+                  <label
+                    for="carousel-3"
+                    class="
+                      next
+                      control-2
+                      w-10
+                      h-10
+                      mr-2
+                      md:mr-10
+                      absolute
+                      cursor-pointer
+                      hidden
+                      rounded-full
+                      bg-black
+                      hover:bg-pmbgreen-dark
+                      leading-tight
+                      z-10
+                      inset-y-0
+                      right-0
+                      my-auto
+                    "
+                  >
+                    <img
+                      src="/public/img/Icon-arrow-forward-white.svg"
+                      class="mx-auto my-auto mt-2 w-2 h-6"
+                    />
+                  </label>
+
+                  <!--Slide 3-->
+                  <input
+                    class="carousel-open"
+                    type="radio"
+                    id="carousel-3"
+                    name="carousel"
+                    aria-hidden="true"
+                    hidden=""
+                  />
+
+                  <div class="carousel-item absolute opacity-0 bg-center">
+                    <img
+                      src="https://mdbootstrap.com/img/new/slides/054.jpg"
+                      alt=""
+                      class="w-full h-99"
+                    />
+                  </div>
+
+                  <label
+                    for="carousel-2"
+                    class="
+                      control-3
+                      w-10
+                      h-10
+                      ml-2
+                      md:ml-10
+                      absolute
+                      cursor-pointer
+                      hidden
+                      rounded-full
+                      bg-black
+                      hover:bg-pmbgreen-dark
+                      leading-tight
+                      z-10
+                      inset-y-0
+                      left-0
+                      my-auto
+                    "
+                  >
+                    <img
+                      src="/public/img/Icon-arrow-back-white.svg"
+                      class="mx-auto my-auto mt-2 w-2 h-6"
+                    />
+                  </label>
+                  <label
+                    for="carousel-1"
+                    class="
+                      next
+                      control-3
+                      w-10
+                      h-10
+                      mr-2
+                      md:mr-10
+                      absolute
+                      cursor-pointer
+                      hidden
+                      rounded-full
+                      bg-black
+                      hover:bg-pmbgreen-dark
+                      leading-tight
+                      z-10
+                      inset-y-0
+                      right-0
+                      my-auto
+                    "
+                  >
+                    <img
+                      src="/public/img/Icon-arrow-forward-white.svg"
+                      class="mx-auto my-auto mt-2 w-2 h-6"
+                    />
+                  </label>
+
+                  <!-- Add additional indicators for each slide-->
+                  <ol class="carousel-indicators">
+                    <li class="inline-block mr-3">
+                      <label
+                        for="carousel-1"
+                        class="
+                          carousel-bullet
+                          cursor-pointer
+                          block
+                          text-4xl text-white
+                          hover:text-blue-700
+                        "
+                        >•</label
+                      >
+                    </li>
+                    <li class="inline-block mr-3">
+                      <label
+                        for="carousel-2"
+                        class="
+                          carousel-bullet
+                          cursor-pointer
+                          block
+                          text-4xl text-white
+                          hover:text-blue-700
+                        "
+                        >•</label
+                      >
+                    </li>
+                    <li class="inline-block mr-3">
+                      <label
+                        for="carousel-3"
+                        class="
+                          carousel-bullet
+                          cursor-pointer
+                          block
+                          text-4xl text-white
+                          hover:text-blue-700
+                        "
+                        >•</label
+                      >
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="" style="margin-top: 420px">
+              <h1 class="font-primary text-3xl font-bold">
+                Jadwal Kegiatan Minggu Ini
+              </h1>
+
+              <div class="grid grid-cols-3 gap-4 mt-10">
+                <div class="grid grid-rows-2 grid-flow-col gap-4">
+                  <div class="relative card">
+                    <h5 class="text-lg">Senin, 18-10-1021</h5>
+                    <span
+                      class="
+                        absolute
+                        top-1
+                        right-1
+                        text-xs
+                        px-2
+                        font-medium
+                        bg-gray-600 bg-opacity-10
+                        text-gray-800
+                        rounded
+                        py-1
+                      "
+                    >
+                      Selesai
+                    </span>
+                    <p class="text-base">13:00 wib</p>
+                    <h1 class="font-primary text-xl font-bold">
+                      Majelis Nurul Huda
+                    </h1>
+                  </div>
+                  <div class="relative card">
+                    <h5 class="text-lg">Senin, 18-10-1021</h5>
+                    <span
+                      class="
+                        absolute
+                        top-1
+                        right-1
+                        text-xs
+                        px-2
+                        font-medium
+                        bg-gray-600 bg-opacity-10
+                        text-gray-800
+                        rounded
+                        py-1
+                      "
+                    >
+                      Selesai
+                    </span>
+                    <p class="text-base">13:00 wib</p>
+                    <h1 class="font-primary text-xl font-bold">
+                      Majelis Nurul Huda
+                    </h1>
+                  </div>
+                </div>
+                <div class="grid grid-rows-2 grid-flow-col gap-4">
+                  <div class="relative card">
+                    <h5 class="text-lg">Senin, 18-10-1021</h5>
+                    <span
+                      class="
+                        absolute
+                        top-1
+                        right-1
+                        text-xs
+                        px-2
+                        font-medium
+                        bg-green-400
+                        text-gray-800
+                        rounded
+                        py-1
+                      "
+                    >
+                      Segera
+                    </span>
+                    <p class="text-base">13:00 wib</p>
+                    <h1 class="font-primary text-xl font-bold">
+                      Majelis Nurul Huda
+                    </h1>
+                  </div>
+                  <div class="relative card">
+                    <h5 class="text-lg">Senin, 18-10-1021</h5>
+                    <span
+                      class="
+                        absolute
+                        top-1
+                        right-1
+                        text-xs
+                        px-2
+                        font-medium
+                        bg-green-400
+                        text-gray-800
+                        rounded
+                        py-1
+                      "
+                    >
+                      Segera
+                    </span>
+                    <p class="text-base">13:00 wib</p>
+                    <h1 class="font-primary text-xl font-bold">
+                      Majelis Nurul Huda
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-50 h-52">
+            <h1 class="text-2xl font-bold font-primary">Berita Terpopular</h1>
+
+            <hr class="border-1 border-gray-300 my-4" />
+
+            <div class="h-100 grid grid-rows-3 grid-flow-col gap-2">
+              <div class="w-full">
+                <a href="#" class="">
+                  <!-- Card -->
+                  <div
+                    class="
+                      grid
+                      lg:grid-cols-2 lg:gap-4
+                      h-full
+                      items-center
+                      hover:opacity-50
+                    "
+                  >
+                    <div class="md:w-36 lg:w-full">
+                      <img
+                        src="/public/img/popular.jpg"
+                        alt=""
+                        class="object-cover w-full md:rounded-lg lg:rounded-xl"
+                      />
+                    </div>
+                    <div class="card-text">
+                      <h5 class="font-bold md:text-lg lg:text-xl font-primary">
+                        Peresmian Majelis Akbar Cabang Batu Aji
+                      </h5>
+                      <p class="text-lg font-light lg:mt-2">
+                        Kamis, 10 November 2020
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Card -->
+                </a>
+              </div>
+              <div class="w-full">
+                <a href="#" class="">
+                  <!-- Card -->
+                  <div
+                    class="
+                      grid
+                      lg:grid-cols-2 lg:gap-4
+                      h-full
+                      items-center
+                      hover:opacity-50
+                    "
+                  >
+                    <div class="md:w-36 lg:w-full">
+                      <img
+                        src="/public/img/popular.jpg"
+                        alt=""
+                        class="object-cover w-full md:rounded-lg lg:rounded-xl"
+                      />
+                    </div>
+                    <div class="card-text">
+                      <h5 class="font-bold md:text-lg lg:text-xl font-primary">
+                        Peresmian Majelis Akbar Cabang Batu Aji
+                      </h5>
+                      <p class="text-lg font-light lg:mt-2">
+                        Kamis, 10 November 2020
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Card -->
+                </a>
+              </div>
+              <div class="w-full">
+                <a href="#" class="">
+                  <!-- Card -->
+                  <div
+                    class="
+                      grid
+                      lg:grid-cols-2 lg:gap-4
+                      h-full
+                      items-center
+                      hover:opacity-50
+                    "
+                  >
+                    <div class="md:w-36 lg:w-full">
+                      <img
+                        src="/public/img/popular.jpg"
+                        alt=""
+                        class="object-cover w-full md:rounded-lg lg:rounded-xl"
+                      />
+                    </div>
+                    <div class="card-text">
+                      <h5 class="font-bold md:text-lg lg:text-xl font-primary">
+                        Peresmian Majelis Akbar Cabang Batu Aji
+                      </h5>
+                      <p class="text-lg font-light lg:mt-2">
+                        Kamis, 10 November 2020
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Card -->
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="mt-20 bg-pmbgreen h-40 flex items-center justify-center"
+      style="margin-top: 670px"
     >
-      <h1 class="text-xl">Ini Index bro</h1>
-    </div>
+      <div class="text-xl font-semibold text-white font-primary">
+        Copyright 2021 - Penyuluhan Agama Majelis Kota Batam | All Right
+        Reserved
+      </div>
+    </footer>
+
+    <!-- SCRIPT JS -->
+    <script>
+      document
+        .getElementById("btn-search")
+        .addEventListener("click", function () {
+          document.getElementById("input-search").classList.toggle("hidden");
+        });
+    </script>
   </body>
 </html>

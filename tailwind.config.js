@@ -18,6 +18,17 @@ module.exports = {
           btn: "#3340AE",
         },
       },
+
+      spacing: {
+        464: "464px",
+        84: "21rem",
+        99: "30rem",
+        100: "40rem",
+      },
+
+      fontFamily: {
+        primary: ["Tahoma"],
+      },
     },
   },
   variants: {
