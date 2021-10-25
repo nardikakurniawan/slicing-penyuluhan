@@ -18,7 +18,8 @@ module.exports = {
           btn: "#3340AE",
         },
         beranda:{
-          btn: "#EBF3F1"
+          btn: "#EBF3F1",
+         
         },
         textB:{
           text:"#408321",
