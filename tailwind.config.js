@@ -26,9 +26,9 @@ module.exports = {
           second:"#666666",
           grafik: "#106B24"
         },
-      fontFamily:{
-        primary:["Tahomo"],
-      }
+        fontFamily: {
+          primary: ["Tahoma"],
+        },
        
       },
     },
