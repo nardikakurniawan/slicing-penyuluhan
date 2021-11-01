@@ -10,6 +10,29 @@
   bg-gray-100;
 }
 
+.active {
+  @apply bg-gradient-to-t
+  from-pmbgreen-dark
+  to-pmbgreen text-white;
+}
+
+.btn-sidebar {
+  @apply flex
+  font-bold
+  text-pmbgreen-light text-xl
+  bg-green-100 bg-opacity-30
+  py-2
+  w-full
+  items-center
+  rounded;
+}
+
+.btn-sidebar:hover {
+  @apply text-white bg-gradient-to-t
+  from-pmbgreen-dark
+  to-pmbgreen;
+}
+
 /* Dropdown Button */
 .dropbtn {
   background-color: transparent;
