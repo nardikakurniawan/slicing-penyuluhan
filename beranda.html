@@ -58,161 +58,106 @@
 
     <div class="flex h-screen w-full">
       <!--Start SideBar-->
-      <div class="sidebar">
-        <!--Start logo -->
-        <div class="flex justify-items-start">
-          <div
-            class="h-32 rounded-full border-white mt-2 flex items-center ml-16"
-          >
-            <img
-              src="/public/img/icon.svg"
-              class="rounded-full w-auto mr-6"
-            />admin
+      <section class="section-content mt-4 md:mt-10">
+        <div class="p-4 flex">
+          <div class="sidebar w-84">
+            <!-- <nav>
+              <button>Menu</button>
+            </nav> -->
+            <div class="flex justify-center">
+              <div class="sidebar-heading flex items-center">
+                <img
+                  src="/public/img/icon.svg"
+                  class="w-14 md:w-20 mr-4"
+                  alt=""
+                />
+                <div class="">
+                  <h5 class="font-primary font-bold text-lg">Sri Falmi</h5>
+                  <p class="font-primary font-bold text-lg">Admin</p>
+                </div>
+              </div>
+            </div>
+            <hr class="border border-gray-300 mt-8 mb-4" />
+
+            <div class="list-group">
+              <a
+                href="/dashboard.html "
+                class="text-primary btn-sidebar mb-4 h-14"
+              >
+                <img
+                  src="/public/img/beranda.svg"
+                  alt=""
+                  class="ml-10 w-10 mr-5"
+                />
+                Dashboard
+              </a>
+
+              <a
+                href="/dashboard.html "
+                class="text-primary btn-sidebar mb-4 h-14"
+                ><img
+                  src="/public/img/penyuluh.svg"
+                  alt=""
+                  class="ml-10 mr-5 w-10"
+                />
+                Penyuluhan
+              </a>
+              <a
+                href="/dashboard.html "
+                class="text-primary btn-sidebar mb-4 h-14 active"
+                ><img
+                  src="/public/img/majelis.svg"
+                  alt=""
+                  class="ml-10 mr-5 w-10"
+                />
+                Majelis
+              </a>
+              <a
+                href="/beranda.html "
+                class="text-primary btn-sidebar mb-4 h-14"
+                ><img
+                  src="/public/img/jadwal.svg"
+                  alt=""
+                  class="ml-10 mr-5 w-10"
+                />
+                Jadwal
+              </a>
+              <a
+                href="/dashboard.html "
+                class="text-primary btn-sidebar mb-4 h-14"
+                ><img
+                  src="/public/img/berita.svg"
+                  alt=""
+                  class="ml-10 mr-5 w-10"
+                />
+                Berita
+              </a>
+              <a
+                href="/dashboard.html "
+                class="text-primary btn-sidebar mb-4 h-14"
+                ><img
+                  src="/public/img/slide.svg"
+                  alt=""
+                  class="ml-10 mr-5 w-10"
+                />
+                Gambar Slide
+              </a>
+              <a
+                href="/dashboard.html "
+                class="text-primary btn-sidebar mb-4 h-14"
+                ><img
+                  src="/public/img/laporan.svg"
+                  alt=""
+                  class="ml-10 mr-5 w-10"
+                />
+                Laporan
+              </a>
+            </div>
           </div>
+
+          
         </div>
-        <div class="user-beranda"></div>
-        <div class="mt-9">
-          <a
-            href=""
-            class="
-              flex
-              items-center
-              p-2
-              bg-beranda-btn
-              hover:bg-pmbgreen-dark
-              w-25
-              rounded
-              text-lg text-textB-text
-              hover:text-white
-            "
-            ><img
-              src="/public/img/beranda.svg"
-              alt="icon"
-              class="mr-10 ml-11"
-            />Beranda
-          </a>
-          <a
-            href=""
-            class="
-              flex
-              items-center
-              p-2
-              mt-3
-              bg-beranda-btn
-              hover:bg-pmbgreen-dark
-              w-25
-              rounded
-              text-textB-text text-lg
-              hover:text-white
-            "
-            ><img
-              src="/public/img/penyuluh.svg"
-              alt="penyuluh"
-              class="mr-10 ml-11"
-            />Penyuluh
-          </a>
-          <a
-            href=""
-            class="
-              flex
-              items-center
-              p-2
-              mt-3
-              bg-beranda-btn
-              hover:bg-pmbgreen-dark
-              w-25
-              rounded
-              text-textB-text text-lg
-              hover:text-white
-            "
-            ><img
-              src="/public/img/majelis.svg"
-              alt="penyuluh"
-              class="mr-10 ml-11"
-            />Majelis
-          </a>
-          <a
-            href=""
-            class="
-              flex
-              items-center
-              p-2
-              mt-3
-              bg-beranda-btn
-              hover:bg-pmbgreen-dark
-              w-25
-              rounded
-              text-textB-text text-lg
-              hover:text-white
-            "
-            ><img
-              src="/public/img/jadwal.svg"
-              alt="penyuluh"
-              class="mr-10 ml-11"
-            />Jadwal
-          </a>
-          <a
-            href=""
-            class="
-              flex
-              items-center
-              p-2
-              mt-3
-              bg-beranda-btn
-              hover:bg-pmbgreen-dark
-              w-25
-              rounded
-              text-textB-text text-lg
-              hover:text-white
-            "
-            ><img
-              src="/public/img/berita.svg"
-              alt="penyuluh"
-              class="mr-10 ml-11"
-            />Berita
-          </a>
-          <a
-            href=""
-            class="
-              flex
-              items-center
-              p-2
-              mt-3
-              bg-beranda-btn
-              hover:bg-pmbgreen-dark
-              w-25
-              rounded
-              text-textB-text text-lg
-              hover:text-white
-            "
-            ><img
-              src="/public/img/slide.svg"
-              alt="slide"
-              class="mr-10 ml-11"
-            />Gambar Slide
-          </a>
-          <a
-            href=""
-            class="
-              flex
-              items-center
-              p-2
-              mt-3
-              bg-beranda-btn
-              hover:bg-pmbgreen-dark
-              w-25
-              rounded
-              text-textB-text text-lg
-              hover:text-white
-            "
-            ><img
-              src="/public/img/laporan.svg"
-              alt="penyuluh"
-              class="mr-10 ml-11"
-            />Laporan
-          </a>
-        </div>
-      </div>
+      </section>
       <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
         <div class="w-full h-80 mt-10 ml-20 rounded shadow-lg text-center">
           <div class="flex justify-center">
@@ -241,6 +186,7 @@
             <div class="h-80 mt-20 -ml-96 rounded shadow-xl"></div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   </body>

@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tambah Penyuluh</title>
+    <title>Tambah Penyuluhan</title>
     <link rel="stylesheet" href="/public/css/tailwind.css" />
   </head>
-  
+
   <body>
-    <div class="">
+    <section class="">
       <nav
         class="
           bg-gradient-to-t
@@ -20,240 +20,532 @@
           content-center
         "
       >
-        <div class="container mx-auto flex items-center justify-between">
-          <div class="flex">
-            <div class="mr-4">
-              <img src="/public/img/logo.png" alt="logo" class="w-27" />
-            </div>
-
-            <div class="">
-              <h1 class="text-white uppercase text-3xl font-primary font-bold">
-                Kementrian Agama Kepri
-              </h1>
-              <h5
-                class="
-                  text-white
-                  uppercase
-                  text-xs
-                  font-primary font-bold
-                  tracking-widest
-                "
-              >
-                Sistem Monitoring Penyuluhan Agama Islam
-              </h5>
-            </div>
+        <div class="container mx-auto p-4 md:p-0 flex items-center">
+          <div class="">
+            <img src="/public/img/logo.png" alt="logo" class="w-3/4" />
           </div>
 
-          <a href="" class="flex items-center text-white"
+          <div class="">
+            <h1
+              class="
+                text-white
+                uppercase
+                text-lg
+                md:text-3xl
+                font-primary font-bold
+              "
+            >
+              Kementrian Agama Kepri
+            </h1>
+            <h5
+              class="
+                text-white
+                uppercase
+                text-xs
+                md:text-sm
+                font-primary font-bold
+                tracking-widest
+              "
+            >
+              Sistem Monitoring Penyuluhan Agama Islam
+            </h5>
+          </div>
+          <a href="" class="flex items-center ml-auto text-white"
             ><img
               src="/public/img/icont-user.svg"
               alt="icon user"
-              class="mr-4"
+              class="mr-3"
             />
             Log Out</a
           >
         </div>
       </nav>
-    </div>
+    </section>
 
-    <div class="flex h-screen w-full">
-      <!--Start SideBar-->
-      <div class="sidebar">
-        <!--Start logo -->
-        <div class="flex justify-items-start bg-pmbgreen">
-          <div
-            class="h-32 flex text-white items-center ml-16"
-          >
-            <img
-              src="/public/img/user.svg"
-              class="rounded-full w-auto mr-6 "
-            />admin
+    <section class="section-content mt-4 md:mt-10">
+      <div class="p-4 flex">
+        <div class="sidebar w-84">
+          <div class="flex justify-center">
+            <div class="sidebar-heading flex items-center">
+              <img
+                src="/public/img/icon.svg"
+                class="w-14 md:w-20 mr-4"
+                alt=""
+              />
+              <div class="">
+                <h5 class="font-primary font-bold text-lg">Sri Falmi</h5>
+                <p class="font-primary font-bold text-lg">Admin</p>
+              </div>
+            </div>
+          </div>
+          <hr class="border border-gray-300 mt-8 mb-4" />
+
+          <div class="list-group">
+            <a
+              href="/dashboard.html "
+              class="text-primary btn-sidebar mb-4 h-14"
+            >
+              <img
+                src="/public/img/beranda.svg"
+                alt=""
+                class="ml-10 w-10 mr-5"
+              />
+              Dashboard
+            </a>
+
+            <a
+              href="/dashboard.html "
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/penyuluh.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Penyuluhan
+            </a>
+            <a
+              href="/dashboard.html "
+              class="text-primary btn-sidebar mb-4 h-14 active"
+              ><img
+                src="/public/img/majelis.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Majelis
+            </a>
+            <a
+              href="/dashboard.html "
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/jadwal.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Jadwal
+            </a>
+            <a
+              href="/dashboard.html "
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/berita.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Berita
+            </a>
+            <a
+              href="/dashboard.html "
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/slide.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Gambar Slide
+            </a>
+            <a
+              href="/dashboard.html "
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/laporan.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Laporan
+            </a>
           </div>
         </div>
-        
-        <div class="mt-9">
-          <a
-            href=""
-            class="
-              flex
-              items-center
-              p-2
-              bg-beranda-btn
-              hover:bg-pmbgreen-dark
-              w-25
-              rounded
-              text-lg text-textB-text
-              hover:text-white
-            "
-            ><img
-              src="/public/img/beranda.svg"
-              alt="icon"
-              class="mr-10 ml-11"
-            />Beranda
-          </a>
-          <a
-            href=""
-            class="
-              flex
-              items-center
-              p-2
-              mt-3
-              bg-beranda-btn
-              hover:bg-pmbgreen-dark
-              w-25
-              rounded
-              text-textB-text text-lg
-              hover:text-white
-            "
-            ><img
-              src="/public/img/penyuluh.svg"
-              alt="penyuluh"
-              class="mr-10 ml-11"
-            />Penyuluh
-          </a>
-          <a
-            href=""
-            class="
-              flex
-              items-center
-              p-2
-              mt-3
-              bg-beranda-btn
-              hover:bg-pmbgreen-dark
-              w-25
-              rounded
-              text-textB-text text-lg
-              hover:text-white
-            "
-            ><img
-              src="/public/img/majelis.svg"
-              alt="penyuluh"
-              class="mr-10 ml-11"
-            />Majelis
-          </a>
-          <a
-            href=""
-            class="
-              flex
-              items-center
-              p-2
-              mt-3
-              bg-beranda-btn
-              hover:bg-pmbgreen-dark
-              w-25
-              rounded
-              text-textB-text text-lg
-              hover:text-white
-            "
-            ><img
-              src="/public/img/jadwal.svg"
-              alt="penyuluh"
-              class="mr-10 ml-11"
-            />Jadwal
-          </a>
-          <a
-            href=""
-            class="
-              flex
-              items-center
-              p-2
-              mt-3
-              bg-beranda-btn
-              hover:bg-pmbgreen-dark
-              w-25
-              rounded
-              text-textB-text text-lg
-              hover:text-white
-            "
-            ><img
-              src="/public/img/berita.svg"
-              alt="penyuluh"
-              class="mr-10 ml-11"
-            />Berita
-          </a>
-          <a
-            href=""
-            class="
-              flex
-              items-center
-              p-2
-              mt-3
-              bg-beranda-btn
-              hover:bg-pmbgreen-dark
-              w-25
-              rounded
-              text-textB-text text-lg
-              hover:text-white
-            "
-            ><img
-              src="/public/img/slide.svg"
-              alt="slide"
-              class="mr-10 ml-11"
-            />Gambar Slide
-          </a>
-          <a
-            href=""
-            class="
-              flex
-              items-center
-              p-2
-              mt-3
-              bg-beranda-btn
-              hover:bg-pmbgreen-dark
-              w-25
-              rounded
-              text-textB-text text-lg
-              hover:text-white
-            "
-            ><img
-              src="/public/img/laporan.svg"
-              alt="penyuluh"
-              class="mr-10 ml-11"
-            />Laporan
-          </a>
-        </div>
-      </div>
-      <div class="grid  gap-10 lg:grid-cols-2 ">
-        <div class="w-full h-3/4 mt-10 rounded shadow-lg text-center">
-       
-         
-         
-          
-          
-          
+
+        <div class="content h-screen w-screen ml-20">
+          <div class="w-1/2 h-3/4 flex justify-center shadow-md">
+            <form class="w-4/5 py-10 justify-center">
+              <div class="font-primary text-2xl font-bold my-8 mdml-24">
+                Tambah Data Penyuluh
+              </div>
+              <div class="md:flex md:items-center mb-6">
+                <div class="md:w">
+                  <label
+                    class="
+                      block
+                      text-pmbgreen-dark
+                      font-bold
+                      md:text-right
+                      mb-1
+                      md:mb-0
+                      pr-4
+                    "
+                    for="name"
+                  >
+                    Nik
+                  </label>
+                </div>
+                <div class="md:w-2/3">
+                  <input
+                    class="
+                      bg-gray-200
+                      appearance-none
+                      border-2 border-gray-200
+                      rounded
+                      w-full
+                      ml-24
+                      md:w-8/12
+                      py-2
+                      px-4
+                      text-gray-700
+                      leading-tight
+                      focus:outline-none focus:bg-white focus:border-pmbgreen
+                    "
+                    id="name"
+                    type="text"
+                    placeholder="Enter nik"
+                  />
+                </div>
+              </div>
+              <div class="md:flex md:items-center mb-6">
+                <div class="md:w">
+                  <label
+                    class="
+                      block
+                      text-pmbgreen-dark
+                      font-bold
+                      md:text-right
+                      mb-1
+                      md:mb-0
+                      pr-4
+                    "
+                    for="name"
+                  >
+                    Nama
+                  </label>
+                </div>
+                <div class="md:w-2/3">
+                  <input
+                    class="
+                      bg-gray-200
+                      appearance-none
+                      border-2 border-gray-200
+                      rounded
+                      w-full
+                      ml-20
+                      md:w-8/12
+                      py-2
+                      px-4
+                      text-gray-700
+                      leading-tight
+                      focus:outline-none focus:bg-white focus:border-pmbgreen
+                    "
+                    id="name"
+                    type="text"
+                    placeholder="Enter Name"
+                  />
+                </div>
+              </div>
+              <div class="md:flex md:items-center mb-6">
+                <div class="md:w">
+                  <label
+                    class="
+                      block
+                      text-pmbgreen-dark
+                      font-bold
+                      md:text-right
+                      mb-1
+                      md:mb-0
+                      pr-4
+                    "
+                    for="total"
+                  >
+                    Tanggal Lahir
+                  </label>
+                </div>
+                <div class="md:w-2/3">
+                  <input
+                    class="
+                      bg-gray-200
+                      appearance-none
+                      border-2 border-gray-200
+                      rounded
+                      w-full
+                      ml-6
+                      md:w-8/12
+                      py-2
+                      px-4
+                      text-gray-700
+                      leading-tight
+                      focus:outline-none focus:bg-white focus:border-pmbgreen
+                    "
+                    id="total"
+                    type="date"
+                    placeholder="Enter Jumlah"
+                  />
+                </div>
+              </div>
+              <div class="md:flex md:items-center mb-6">
+                <div class="md:w">
+                  <label
+                    class="
+                      block
+                      text-pmbgreen-dark
+                      font-bold
+                      md:text-right
+                      mb-1
+                      md:mb-0
+                      pr-4
+                    "
+                    for="total"
+                  >
+                    Telepon
+                  </label>
+                </div>
+                <div class="md:w-2/3">
+                  <input
+                    class="
+                      bg-gray-200
+                      appearance-none
+                      border-2 border-gray-200
+                      rounded
+                      w-full
+                      ml-16
+                      md:w-8/12
+                      py-2
+                      px-4
+                      text-gray-700
+                      leading-tight
+                      focus:outline-none focus:bg-white focus:border-pmbgreen
+                    "
+                    id="total"
+                    type="number"
+                    placeholder="Enter number"
+                  />
+                </div>
+              </div>
+              <div class="md:flex md:items-center mb-6">
+                <div class="md:w-">
+                  <label
+                    class="
+                      block
+                      text-pmbgreen-dark
+                      font-bold
+                      md:text-right md:mb-0
+                      pr-4
+                    "
+                    for="address"
+                  >
+                    Alamat
+                  </label>
+                </div>
+                <div class="md:w-2/3">
+                  <textarea
+                    name="address"
+                    rows="3"
+                    cols="30"
+                    id="address"
+                    class="
+                      bg-gray-200
+                      appearance-none
+                      border-2 border-gray-200
+                      rounded
+                      w-full
+                      ml-20
+                      md:w-8/12
+                      py-2
+                      px-4
+                      text-gray-700
+                      leading-tight
+                      focus:outline-none focus:bg-white focus:border-pmbgreen
+                    "
+                  >
+                  </textarea>
+                </div>
+              </div>
+              <div class="md:flex md:items-center mb-6">
+                <div class="md:w">
+                  <label
+                    class="
+                      block
+                      text-pmbgreen-dark
+                      font-bold
+                      md:text-right
+                      mb-1
+                      md:mb-0
+                      pr-4
+                    "
+                    for="total"
+                  >
+                    Status
+                  </label>
+                </div>
+                <div class="md:w-2/3">
+                  <input
+                    class="
+                      bg-gray-200
+                      appearance-none
+                      border-2 border-gray-200
+                      rounded
+                      w-full
+                      ml-24
+                      md:w-8/12
+                      py-2
+                      px-4
+                      text-gray-700
+                      leading-tight
+                      focus:outline-none focus:bg-white focus:border-pmbgreen
+                    "
+                    id="total"
+                    type="number"
+                    placeholder="Aktif"
+                  />
+                </div>
+              </div>
+              <div class="md:flex md:items-center mb-6">
+                <div class="md:w">
+                  <label
+                    class="
+                      block
+                      text-pmbgreen-dark
+                      font-bold
+                      md:text-right
+                      mb-1
+                      mr-1
+                      md:mb-0
+                      pr-4
+                    "
+                    for="total"
+                  >
+                    Username
+                  </label>
+                </div>
+                <div class="md:w-2/3">
+                  <input
+                    class="
+                      bg-gray-200
+                      appearance-none
+                      border-2 border-gray-200
+                      rounded
+                      w-full
+                      ml-16
+                      md:w-8/12
+                      py-2
+                      px-4
+                      text-gray-700
+                      leading-tight
+                      focus:outline-none focus:bg-white focus:border-pmbgreen
+                    "
+                    id="total"
+                    type="number"
+                    placeholder="Enter Username"
+                  />
+                </div>
+              </div>
+              <div class="md:flex md:items-center mb-6">
+                <div class="md:w">
+                  <label
+                    class="
+                      block
+                      text-pmbgreen-dark
+                      font-bold
+                      md:text-right
+                      mb-1
+                      -mr-1
+                      md:mb-0
+                      pr-4
+                    "
+                    for="total"
+                  >
+                    Password
+                  </label>
+                </div>
+                <div class="md:w-2/3">
+                  <input
+                    class="
+                      bg-gray-200
+                      appearance-none
+                      border-2 border-gray-200
+                      rounded
+                      w-full
+                      ml-20
+                      md:w-8/12
+                      py-2
+                      px-4
+                      text-gray-700
+                      leading-tight
+                      focus:outline-none focus:bg-white focus:border-pmbgreen
+                    "
+                    id="total"
+                    type="number"
+                    placeholder="Enter Password"
+                  />
+                </div>
+              </div>
+
+              <div class="md:flex md:items-center mt-16">
+                <div class="md:w-1/3"></div>
+                <div class="md:w-2/3">
+                  <button
+                    class="
+                      shadow
+                      bg-pmbgreen-btn
+                      hover:bg-pmbgreen-dark
+                      focus:shadow-outline focus:outline-none
+                      text-white
+                      font-bold
+                      py-2
+                      px-8
+                      rounded
+                      md:mr-10
+                    "
+                    type="button"
+                  >
+                    Simpan
+                  </button>
+                  <button
+                    class="
+                      shadow
+                      bg-pmbred-btn
+                      hover:bg-pmbred-dark
+                      focus:shadow-outline focus:outline-none
+                      text-white
+                      font-bold
+                      py-2
+                      px-8
+                      rounded
+                    "
+                    type="button"
+                  >
+                    Clear
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
-        </div>
       </div>
-    </div>
+    </section>
     <footer class="p-5 bg-pmbgreen-btn">
-      <div class="max-w-7xl flex flex-col sm:flex-row py-4 mx-auto justify-between items-center">
-      <div class=" text-white ">
-        <div class="ml-44">
-          <p class="ml-96">Copyright 2021 - Penyuluhan Agama</p>
+      <div
+        class="
+          max-w-7xl
+          flex flex-col
+          sm:flex-row
+          py-4
+          mx-auto
+          justify-between
+          items-center
+        "
+      >
+        <div class="text-white">
+          <div class="ml-44">
+            <p class="ml-96">Copyright 2021 - Penyuluhan Agama</p>
+          </div>
+          <div class="ml-44">
+            <p class="ml-96">Majelis Kota Batam | All right Recived</p>
+          </div>
         </div>
-        <div class=" ml-44">
-          <p class="ml-96">
-            Majelis Kota Batam | All right Recived
-          </p>
+        <div class="flex -mr-96">
+          <img class="m-2" src="/public/img/Path 22.svg" alt="" />
+          <img class="m-2" src="/public/img/Path 23.svg" alt="" />
+          <img class="m-2" src="/public/img/Path 33.svg" alt="" />
         </div>
       </div>
-      <div class="flex -mr-96">
-       <img class="m-2" src="/public/img/Path 22.svg" alt="">
-       <img class="m-2" src="/public/img/Path 23.svg" alt="">
-       <img class="m-2 " src="/public/img/Path 33.svg" alt="">
-      </div>
-    </div>
-        
-        
-     
-        
-    
-
-    
-      </footer>
-          
-           
-  
+    </footer>
   </body>
 </html>

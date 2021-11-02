@@ -7,6 +7,7 @@ module.exports = {
         pmbgreen: {
           DEFAULT: "#126E26",
           dark: "#093713",
+          light: "#408321",
           btn: "#22A527",
         },
         pmbred: {

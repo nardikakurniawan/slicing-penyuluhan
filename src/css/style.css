@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+.card {
+  @apply filter
+  drop-shadow-xl
+  rounded-md
+  p-4
+  bg-gray-100;
+}
+
+.btn-sidebar {
+  @apply flex
+  font-bold
+  text-pmbgreen-light text-xl
+  bg-green-100 bg-opacity-30
+  py-2
+  w-full
+  items-center
+  rounded;
+}
+
+.btn-sidebar:hover {
+  @apply text-white bg-gradient-to-t
+  from-pmbgreen-dark
+  to-pmbgreen;
+}
+
 .user-text {
   background: transparent;
   color: rgb(31, 31, 31);
@@ -28,4 +53,43 @@ ul li:hover a {
 .sidebar {
   width: 300px;
   background: #ffffff;
+}
+
+.btn-sidebar {
+  @apply flex
+  font-bold
+  text-pmbgreen-light text-xl
+  bg-green-100 bg-opacity-30
+  py-2
+  w-full
+  items-center
+  rounded;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
