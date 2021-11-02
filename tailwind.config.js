@@ -12,6 +12,7 @@ module.exports = {
         },
         pmbred: {
           DEFAULT: "#FF1900",
+          dark: "#8E0215",
           btn: "#CB374B",
         },
         pmbblue: {
