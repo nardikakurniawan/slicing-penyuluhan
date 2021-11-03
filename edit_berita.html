@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tambah Penyuluh</title>
+    <title>Edit Berita</title>
     <link rel="stylesheet" href="/public/css/tailwind.css" />
   </head>
 
@@ -156,16 +156,17 @@
           </div>
         </div>
       </section>
-      <div class="w-screen ml-11">
-        <div class="p-9 block h-screen md:flex">
-          <div class="md:w-3/6 h-5/6 sm:p-6 lg:p-8 bg-white shadow-md">
+      <div class="w-screen ml-11 ">
+        <div class="p-9 block h-screen  md:flex">
+          <div class="md:w-3/6 h-3/4 sm:p-6 lg:p-8 bg-white shadow-md">
             <div class="flex justify-between">
               <form class="w-4/5 py-3 justify-center">
                 <div class="font-primary text-2xl font-bold my-8 md:ml-24">
-                  Tambah Data Penyuluh
+                  Edit Data Berita
                 </div>
             </div>
-            <div class="md:flex md:items-center mb-6">
+
+            <div class="md:flex md:items-center mt-20 mb-6">
               <div class="md:w-1/3">
                 <label
                   class="
@@ -179,7 +180,7 @@
                   "
                   for="name"
                 >
-                  Nik
+                  Judul
                 </label>
               </div>
               <div class="md:w-2/3">
@@ -199,120 +200,7 @@
                   "
                   id="name"
                   type="text"
-                  placeholder="Enter Name"
-                />
-              </div>
-            </div>
-            <div class="md:flex md:items-center mb-6">
-              <div class="md:w-1/3">
-                <label
-                  class="
-                    block
-                    text-pmbgreen-dark
-                    font-bold
-                    md:text-right
-                    mb-1
-                    md:mb-0
-                    pr-4
-                  "
-                  for="name"
-                >
-                  Nama
-                </label>
-              </div>
-              <div class="md:w-2/3">
-                <input
-                  class="
-                    bg-gray-200
-                    appearance-none
-                    border-2 border-gray-200
-                    rounded
-                    w-full
-                    md:w-8/12
-                    py-2
-                    px-4
-                    text-gray-700
-                    leading-tight
-                    focus:outline-none focus:bg-white focus:border-pmbgreen
-                  "
-                  id="name"
-                  type="text"
-                  placeholder="Enter Name"
-                />
-              </div>
-            </div>
-            <div class="md:flex md:items-center mb-6">
-              <div class="md:w-1/3">
-                <label
-                  class="
-                    block
-                    text-pmbgreen-dark
-                    font-bold
-                    md:text-right
-                    mb-1
-                    md:mb-0
-                    pr-4
-                  "
-                  for="name"
-                >
-                  Tanggal Lahir
-                </label>
-              </div>
-              <div class="md:w-2/3">
-                <input
-                  class="
-                    bg-gray-200
-                    appearance-none
-                    border-2 border-gray-200
-                    rounded
-                    w-full
-                    md:w-8/12
-                    py-2
-                    px-4
-                    text-gray-700
-                    leading-tight
-                    focus:outline-none focus:bg-white focus:border-pmbgreen
-                  "
-                  id="name"
-                  type="date"
-                />
-              </div>
-            </div>
-            <div class="md:flex md:items-center mb-6">
-              <div class="md:w-1/3">
-                <label
-                  class="
-                    block
-                    text-pmbgreen-dark
-                    font-bold
-                    md:text-right
-                    mb-1
-                    md:mb-0
-                    pr-4
-                  "
-                  for="name"
-                >
-                  Telepon
-                </label>
-              </div>
-              <div class="md:w-2/3">
-                <input
-                  class="
-                    bg-gray-200
-                    appearance-none
-                    border-2 border-gray-200
-                    rounded
-                    w-full
-                    md:w-8/12
-                    py-2
-                    px-4
-                    text-gray-700
-                    leading-tight
-                    focus:outline-none focus:bg-white focus:border-pmbgreen
-                  "
-                  id="name"
-                  type="text"
-                  placeholder="Enter Name"
+                  placeholder="Enter Judul"
                 />
               </div>
             </div>
@@ -330,7 +218,7 @@
                   "
                   for="address"
                 >
-                  Alamat
+                  Isi
                 </label>
               </div>
               <div class="md:w-2/3">
@@ -370,109 +258,22 @@
                   "
                   for="name"
                 >
-                  Status
+                  Kategori
                 </label>
               </div>
               <div class="md:w-2/3">
-                <input
-                  class="
-                    bg-gray-200
-                    appearance-none
-                    border-2 border-gray-200
-                    rounded
-                    w-full
-                    md:w-8/12
-                    py-2
-                    px-4
-                    text-gray-700
-                    leading-tight
-                    focus:outline-none focus:bg-white focus:border-pmbgreen
-                  "
-                  id="name"
-                  type="number"
-                  placeholder="Aktif"
-                />
+                <select class="w-2/3 border bg-white rounded px-3 py-2 outline-none">
+                  <option class="py-1">Ikhtiar</option>
+                  <option class="py-1">Maulid Nabi</option>
+                  <option class="py-1">Peringatan 1 Muharam</option>
+              </select>
+                
               </div>
             </div>
-            <div class="md:flex md:items-center mb-6">
-              <div class="md:w-1/3">
-                <label
-                  class="
-                    block
-                    text-pmbgreen-dark
-                    font-bold
-                    md:text-right
-                    mb-1
-                    md:mb-0
-                    pr-4
-                  "
-                  for="name"
-                >
-                  Username
-                </label>
-              </div>
-              <div class="md:w-2/3">
-                <input
-                  class="
-                    bg-gray-200
-                    appearance-none
-                    border-2 border-gray-200
-                    rounded
-                    w-full
-                    md:w-8/12
-                    py-2
-                    px-4
-                    text-gray-700
-                    leading-tight
-                    focus:outline-none focus:bg-white focus:border-pmbgreen
-                  "
-                  id="name"
-                  type="text"
-                  placeholder="Enter Name"
-                />
-              </div>
-            </div>
-            <div class="md:flex md:items-center mb-6">
-              <div class="md:w-1/3">
-                <label
-                  class="
-                    block
-                    text-pmbgreen-dark
-                    font-bold
-                    md:text-right
-                    mb-1
-                    md:mb-0
-                    pr-4
-                  "
-                  for="name"
-                >
-                  Password
-                </label>
-              </div>
-              <div class="md:w-2/3">
-                <input
-                  class="
-                    bg-gray-200
-                    appearance-none
-                    border-2 border-gray-200
-                    rounded
-                    w-full
-                    md:w-8/12
-                    py-2
-                    px-4
-                    text-gray-700
-                    leading-tight
-                    focus:outline-none focus:bg-white focus:border-pmbgreen
-                  "
-                  id="name"
-                  type="text"
-                  placeholder="Enter Name"
-                />
-              </div>
-            </div>
-            <div class="md:flex md:items-center ml-36 ">
+          
+            <div class="md:flex md:items-center  ">
               <div class="md:w-1/3"></div>
-              <div class="md:w-2/3">
+              <div class="md:w-2/3 py-20">
               <button class="
               shadow
               bg-pmbgreen-btn
@@ -482,6 +283,8 @@
               font-bold
               py-2
               px-8
+              h-14
+              w-44
               rounded
               md:mr-10
             "
@@ -489,13 +292,15 @@
           </button>
           <button class="
               shadow
-              bg-pmbred-btn
-              hover:bg-pmbred-dark
+              bg-pmbred
+              hover:bg-pmbred-btn
               focus:shadow-outline focus:outline-none
               text-white
               font-bold
               py-2
               px-8
+              h-14
+              w-44
               rounded
               md:mr-10
             "
