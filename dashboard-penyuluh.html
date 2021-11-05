@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Penyuluhan</title>
+    <link rel="stylesheet" href="/public/css/tailwind.css" />
+  </head>
+  <body>
+    <section class="navbar">
+      <nav
+        class="
+          bg-gradient-to-t
+          from-pmbgreen-dark
+          to-pmbgreen
+          h-32
+          flex
+          content-center
+        "
+      >
+        <div
+          class="container mx-auto p-4 md:p-0 flex items-center justify-between"
+        >
+          <div class="flex">
+            <div class="">
+              <img src="/public/img/logo.png" alt="logo" class="w-3/4" />
+            </div>
+
+            <div class="">
+              <h1
+                class="
+                  text-white
+                  uppercase
+                  text-lg
+                  md:text-3xl
+                  font-primary font-bold
+                "
+              >
+                Kementrian Agama Kepri
+              </h1>
+              <h5
+                class="
+                  hidden
+                  md:block
+                  text-white
+                  uppercase
+                  text-xs
+                  md:text-sm
+                  font-primary font-bold
+                  tracking-widest
+                "
+              >
+                Sistem Monitoring Penyuluhan Agama Islam
+              </h5>
+            </div>
+          </div>
+
+          <a
+            href="/login.html"
+            class="flex uppercase text-white md:font-bold hover:opacity-50"
+            ><img
+              src="/public/img/icon-user-circle.svg"
+              alt=""
+              class="hidden md:block w-5 mr-4"
+            />Logout</a
+          >
+        </div>
+      </nav>
+    </section>
+
+    <section class="section-content mt-4 md:mt-10">
+      <div class="p-4 flex">
+        <div class="sidebar w-84">
+          <div class="flex justify-center">
+            <a href="dashboard-penyuluh-profile.html">
+              <div class="sidebar-heading flex items-center">
+                <img
+                  src="/public/img/icon-user-circle-green.svg"
+                  class="w-14 md:w-20 mr-4"
+                  alt=""
+                />
+                <div class="">
+                  <h5 class="font-primary font-bold text-lg">Pertamax</h5>
+                  <p class="font-primary font-bold text-lg">Penyuluh</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <hr class="border border-gray-300 mt-8 mb-4" />
+
+          <div class="list-group">
+            <a
+              href="/dashboard-penyuluh.html "
+              class="text-primary btn-sidebar mb-4 h-14 active"
+            >
+              <img
+                src="/public/img/Icon-dashboard.svg"
+                alt=""
+                class="ml-10 w-10 mr-5"
+              />
+              Beranda
+            </a>
+
+            <a
+              href="/dashboard-penyuluh-jadwal.html "
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/icon-jadwal.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Jadwal
+            </a>
+
+            <a
+              href="/dashboard-penyuluh-laporan.html "
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/icon-laporan.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Laporan
+            </a>
+          </div>
+        </div>
+
+        <div class="content w-screen ml-8">
+          <h1 class="font-primary text-3xl font-bold text-pmbgreen">
+            Selamat Pagi Pertamax
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="
+        mt-20
+        bg-gradient-to-t
+        from-pmbgreen-dark
+        to-pmbgreen
+        h-40
+        flex
+        items-center
+        justify-center
+      "
+    >
+      <div
+        class="
+          container
+          mx-auto
+          p-4
+          md:p-0
+          text-sm text-center
+          md:text-xl
+          font-medium
+          text-white
+          font-primary
+        "
+      >
+        Copyright 2021 - Penyuluhan Agama Majelis Kota Batam | All Right
+        Reserved
+      </div>
+    </footer>
+  </body>
+</html>
