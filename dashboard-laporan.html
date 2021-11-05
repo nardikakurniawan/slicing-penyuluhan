@@ -334,8 +334,8 @@
                             font-medium
                           "
                         >
-                          <a
-                            href="dashboard-jadwal-edit-data.html"
+                          <button
+                            type="button"
                             class="
                               border-2 border-grey-100
                               rounded-lg
@@ -347,11 +347,12 @@
                               mr-2
                               hover:opacity-60 hover:border-blue-400
                             "
+                            onclick="toggleModal('modal-example-large')"
                           >
                             <img src="/public/img/Icon-eye.svg" alt="" />
-                          </a>
-                          <a
-                            href="#"
+                          </button>
+                          <button
+                            type="button"
                             class="
                               border-2 border-grey-100
                               rounded-lg
@@ -362,127 +363,10 @@
                               justify-center
                               hover:opacity-60 hover:border-red-600
                             "
+                            onclick="toggleModal('modal-example-small')"
                           >
                             <img src="/public/img/Icon-delete.svg" alt="" />
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="px-6 py-4">1</td>
-                        <td class="px-6 py-4">Maulid Nabi</td>
-                        <td class="px-6 py-4">Ulama Batam</td>
-                        <td class="px-6 py-4 max-w-md">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Facere maxime sed consectetur nemo amet ex
-                          maiores obcaecati blanditiis exercitationem corrupti
-                          odit eligendi architecto autem repellendus, temporibus
-                          quam dignissimos iste suscipit recusandae! A iste
-                          mollitia ratione qui nulla odit ut. Nisi consequuntur
-                          id corporis, praesentium vitae dolorem quidem sunt
-                          odit tenetur?
-                        </td>
-                        <td class="px-6 py-4">100</td>
-                        <td class="px-6 py-4">05-11-2021</td>
-                        <td
-                          class="
-                            flex
-                            justify-center
-                            px-6
-                            py-4
-                            text-sm
-                            font-medium
-                          "
-                        >
-                          <a
-                            href="dashboard-jadwal-edit-data.html"
-                            class="
-                              border-2 border-grey-100
-                              rounded-lg
-                              w-8
-                              h-8
-                              flex
-                              items-center
-                              justify-center
-                              mr-2
-                              hover:opacity-60 hover:border-blue-400
-                            "
-                          >
-                            <img src="/public/img/Icon-eye.svg" alt="" />
-                          </a>
-                          <a
-                            href="#"
-                            class="
-                              border-2 border-grey-100
-                              rounded-lg
-                              w-8
-                              h-8
-                              flex
-                              items-center
-                              justify-center
-                              hover:opacity-60 hover:border-red-600
-                            "
-                          >
-                            <img src="/public/img/Icon-delete.svg" alt="" />
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="px-6 py-4">1</td>
-                        <td class="px-6 py-4">Maulid Nabi</td>
-                        <td class="px-6 py-4">Ulama Batam</td>
-                        <td class="px-6 py-4 max-w-md">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Facere maxime sed consectetur nemo amet ex
-                          maiores obcaecati blanditiis exercitationem corrupti
-                          odit eligendi architecto autem repellendus, temporibus
-                          quam dignissimos iste suscipit recusandae! A iste
-                          mollitia ratione qui nulla odit ut. Nisi consequuntur
-                          id corporis, praesentium vitae dolorem quidem sunt
-                          odit tenetur?
-                        </td>
-                        <td class="px-6 py-4">100</td>
-                        <td class="px-6 py-4">05-11-2021</td>
-                        <td
-                          class="
-                            flex
-                            justify-center
-                            px-6
-                            py-4
-                            text-sm
-                            font-medium
-                          "
-                        >
-                          <a
-                            href="dashboard-jadwal-edit-data.html"
-                            class="
-                              border-2 border-grey-100
-                              rounded-lg
-                              w-8
-                              h-8
-                              flex
-                              items-center
-                              justify-center
-                              mr-2
-                              hover:opacity-60 hover:border-blue-400
-                            "
-                          >
-                            <img src="/public/img/Icon-eye.svg" alt="" />
-                          </a>
-                          <a
-                            href="#"
-                            class="
-                              border-2 border-grey-100
-                              rounded-lg
-                              w-8
-                              h-8
-                              flex
-                              items-center
-                              justify-center
-                              hover:opacity-60 hover:border-red-600
-                            "
-                          >
-                            <img src="/public/img/Icon-delete.svg" alt="" />
-                          </a>
+                          </button>
                         </td>
                       </tr>
 
@@ -527,6 +411,281 @@
             </div>
           </div>
           <!-- end tabel -->
+
+          <!-- MODAL DETAIL -->
+          <div
+            class="
+              hidden
+              overflow-x-hidden overflow-y-auto
+              fixed
+              inset-0
+              z-50
+              outline-none
+              focus:outline-none
+              justify-center
+              items-center
+            "
+            id="modal-example-large"
+          >
+            <div class="relative w-auto my-6 mx-auto max-w-6xl">
+              <!--content-->
+              <div
+                class="
+                  border-0
+                  rounded-lg
+                  shadow-lg
+                  relative
+                  flex flex-col
+                  w-full
+                  bg-white
+                  outline-none
+                  focus:outline-none
+                "
+              >
+                <!--header-->
+                <div
+                  class="
+                    flex
+                    items-start
+                    justify-between
+                    p-5
+                    border-b border-solid border-gray-200
+                    rounded-t
+                  "
+                >
+                  <h3 class="text-3xl font-semibold">Details</h3>
+                  <button
+                    class="
+                      p-1
+                      ml-auto
+                      bg-transparent
+                      border-0
+                      text-gray-300
+                      float-right
+                      text-3xl
+                      leading-none
+                      font-semibold
+                      outline-none
+                      focus:outline-none
+                    "
+                    onclick="toggleModal('modal-example-large')"
+                  >
+                    <span
+                      class="
+                        bg-transparent
+                        h-6
+                        w-6
+                        text-2xl
+                        block
+                        outline-none
+                        focus:outline-none
+                      "
+                    >
+                      <img src="/public/img/Icon-times.svg" alt="" />
+                    </span>
+                  </button>
+                </div>
+                <!--body-->
+                <div class="relative p-6 flex-auto">
+                  <p class="my-4 text-gray-500 text-lg leading-relaxed">
+                    I always felt like I could do anything. That’s the main
+                    thing people are controlled by! Thoughts- their perception
+                    of themselves! They're slowed down by their perception of
+                    themselves. If you're taught you can’t do anything, you
+                    won’t do anything. I was taught I could do everything.
+                  </p>
+                </div>
+                <!--footer-->
+                <div
+                  class="
+                    flex
+                    items-center
+                    justify-end
+                    p-6
+                    border-t border-solid border-gray-200
+                    rounded-b
+                  "
+                >
+                  <button
+                    class="
+                      text-purple-500
+                      background-transparent
+                      font-bold
+                      uppercase
+                      px-6
+                      py-2
+                      text-sm
+                      outline-none
+                      focus:outline-none
+                      mr-1
+                      mb-1
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    type="button"
+                    onclick="toggleModal('modal-example-large')"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden opacity-50 fixed inset-0 z-40 bg-black"
+            id="modal-example-large-backdrop"
+          ></div>
+          <!-- END MODAL DETAIL -->
+
+          <!-- Modal Hapus Data -->
+          <div
+            class="
+              hidden
+              overflow-x-hidden overflow-y-auto
+              fixed
+              inset-0
+              z-50
+              outline-none
+              focus:outline-none
+              justify-center
+              items-center
+            "
+            id="modal-example-small"
+          >
+            <div class="relative w-auto my-6 mx-auto max-w-sm">
+              <!--content-->
+              <div
+                class="
+                  border-0
+                  rounded-lg
+                  shadow-lg
+                  relative
+                  flex flex-col
+                  w-full
+                  bg-white
+                  outline-none
+                  focus:outline-none
+                "
+              >
+                <!--header-->
+                <div
+                  class="
+                    flex
+                    items-start
+                    justify-between
+                    p-5
+                    border-b border-solid border-gray-200
+                    rounded-t
+                  "
+                >
+                  <h3 class="text-3xl font-semibold">Hapus Data</h3>
+                  <button
+                    class="
+                      p-1
+                      ml-auto
+                      bg-transparent
+                      border-0
+                      text-gray-300
+                      float-right
+                      text-3xl
+                      leading-none
+                      font-semibold
+                      outline-none
+                      focus:outline-none
+                    "
+                    onclick="toggleModal('modal-example-small')"
+                  >
+                    <span
+                      class="
+                        bg-transparent
+                        h-6
+                        w-6
+                        text-2xl
+                        block
+                        outline-none
+                        focus:outline-none
+                      "
+                    >
+                      <img src="/public/img/Icon-times.svg" alt="" />
+                    </span>
+                  </button>
+                </div>
+                <!--body-->
+                <div class="relative p-6 flex-auto">
+                  <p class="my-4 text-gray-500 text-lg leading-relaxed">
+                    Anda yakin ingin menghapus data ini?
+                  </p>
+                </div>
+                <!--footer-->
+                <div
+                  class="
+                    flex
+                    items-center
+                    justify-end
+                    p-6
+                    border-t border-solid border-gray-200
+                    rounded-b
+                  "
+                >
+                  <button
+                    class="
+                      text-gray-400
+                      background-transparent
+                      font-bold
+                      uppercase
+                      px-6
+                      py-2
+                      text-sm
+                      outline-none
+                      focus:outline-none
+                      mr-1
+                      mb-1
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    type="button"
+                    onclick="toggleModal('modal-example-small')"
+                  >
+                    Tidak
+                  </button>
+                  <button
+                    class="
+                      bg-pmbred-btn
+                      text-white
+                      active:bg-purple-600
+                      hover:bg-pmbred-dark
+                      font-bold
+                      uppercase
+                      text-xs
+                      px-4
+                      py-2
+                      rounded
+                      shadow
+                      hover:shadow-md
+                      outline-none
+                      focus:outline-none
+                      mr-1
+                      mb-1
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    type="button"
+                    onclick="toggleModal('modal-example-small')"
+                  >
+                    Hapus
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden opacity-50 fixed inset-0 z-40 bg-black"
+            id="modal-example-small-backdrop"
+          ></div>
+          <!-- END MODAL HAPUS -->
         </div>
       </div>
     </section>
@@ -560,5 +719,7 @@
         Reserved
       </div>
     </footer>
+
+    <script type="text/javascript" src="/src/js/modal.js"></script>
   </body>
 </html>
