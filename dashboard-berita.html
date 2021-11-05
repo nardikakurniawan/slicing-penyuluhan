@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Berita</title>
+    <link rel="stylesheet" href="/public/css/tailwind.css" />
+  </head>
+  <body>
+    <section class="navbar">
+      <nav
+        class="
+          bg-gradient-to-t
+          from-pmbgreen-dark
+          to-pmbgreen
+          h-32
+          flex
+          content-center
+        "
+      >
+        <div
+          class="container mx-auto p-4 md:p-0 flex items-center justify-between"
+        >
+          <div class="flex">
+            <div class="">
+              <img src="/public/img/logo.png" alt="logo" class="w-3/4" />
+            </div>
+
+            <div class="">
+              <h1
+                class="
+                  text-white
+                  uppercase
+                  text-lg
+                  md:text-3xl
+                  font-primary font-bold
+                "
+              >
+                Kementrian Agama Kepri
+              </h1>
+              <h5
+                class="
+                  hidden
+                  md:block
+                  text-white
+                  uppercase
+                  text-xs
+                  md:text-sm
+                  font-primary font-bold
+                  tracking-widest
+                "
+              >
+                Sistem Monitoring Penyuluhan Agama Islam
+              </h5>
+            </div>
+          </div>
+
+          <a
+            href="/login.html"
+            class="flex uppercase text-white md:font-bold hover:opacity-50"
+            ><img
+              src="/public/img/icon-user-circle.svg"
+              alt=""
+              class="hidden md:block w-5 mr-4"
+            />Logout</a
+          >
+        </div>
+      </nav>
+    </section>
+
+    <section class="section-content mt-4 md:mt-10">
+      <div class="p-4 flex">
+        <div class="sidebar w-84">
+          <div class="flex justify-center">
+            <div class="sidebar-heading flex items-center">
+              <img
+                src="/public/img/icon.svg"
+                class="w-14 md:w-20 mr-4"
+                alt=""
+              />
+              <div class="">
+                <h5 class="font-primary font-bold text-lg">Sri Falmi</h5>
+                <p class="font-primary font-bold text-lg">Admin</p>
+              </div>
+            </div>
+          </div>
+          <hr class="border border-gray-300 mt-8 mb-4" />
+
+          <div class="list-group">
+            <a
+              href="/dashboard.html "
+              class="text-primary btn-sidebar mb-4 h-14"
+            >
+              <img
+                src="/public/img/beranda.svg"
+                alt=""
+                class="ml-10 w-10 mr-5"
+              />
+              Dashboard
+            </a>
+
+            <a
+              href="/dashboard.html "
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/penyuluh.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Penyuluhan
+            </a>
+            <a
+              href="/dashboard.html "
+              class="text-primary btn-sidebar mb-4 h-14 active"
+              ><img
+                src="/public/img/majelis.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Majelis
+            </a>
+            <a
+              href="/dashboard.html "
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/jadwal.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Jadwal
+            </a>
+            <a
+              href="/dashboard.html "
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/berita.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Berita
+            </a>
+            <a
+              href="/dashboard.html "
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/slide.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Gambar Slide
+            </a>
+            <a
+              href="/dashboard.html "
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/laporan.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Laporan
+            </a>
+          </div>
+        </div>
+
+        <div class="content w-screen ml-8">
+          <a
+            href="/dashboard-majelis-tambah-data.html"
+            type="button"
+            class="
+              bg-pmbblue-btn
+              text-white
+              font-bold
+              text-sm
+              py-2
+              px-8
+              rounded-md
+              hover:opacity-70
+              cursor-pointer
+            "
+          >
+            Tambah
+          </a>
+          
+
+          <!-- tabel -->
+          <div class="flex flex-col text-left mt-8 w-full">
+            <div class="overflow-x-auto">
+              <div class="py-2">
+                <div
+                  class="
+                    shadow
+                    overflow-hidden
+                    border border-gray-200
+                    sm:rounded-lg
+                  "
+                >
+                  <div class="h-16 flex items-center justify-between px-4">
+                    <div class="flex">
+                      <img src="/public/img/Icon-tasks.svg" alt="" />
+                      <h5 class="uppercase ml-6 text-gray-300 font-medium">
+                        Daftar berita
+                      </h5>
+                    </div>
+                    <div class="relative">
+                      <input
+                        type="text"
+                        class="
+                          h-10
+                          w-84
+                          pr-8
+                          pl-5
+                          rounded
+                          z-0
+                          border border-gray-200
+                          focus:shadow focus:outline-none
+                        "
+                        placeholder="Search..."
+                      />
+                      <div class="absolute top-2 right-3">
+                        <img src="/public/img/Icon-info.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <table class="w-full divide-y divide-gray-200 table-auto">
+                    <thead class="bg-pmbgreen-dark">
+                      <tr>
+                        <th
+                          scope="col"
+                          class="
+                            px-6
+                            py-4
+                            text-left text-xs
+                            font-medium
+                            text-white
+                            uppercase
+                            tracking-wider
+                          "
+                        >
+                          No
+                        </th>
+                        <th
+                          scope="col"
+                          class="
+                            px-6
+                            py-4
+                            text-left text-xs
+                            font-medium
+                            text-white
+                            uppercase
+                            tracking-wider
+                          "
+                        >
+                          Judul
+                        </th>
+                        <th
+                          scope="col"
+                          class="
+                            px-6
+                            py-4
+                            text-left text-xs
+                            font-medium
+                            text-white
+                            uppercase
+                            tracking-wider
+                          "
+                        >
+                          Isi
+                        </th>
+                        <th
+                          scope="col"
+                          class="
+                            px-6
+                            py-4
+                            text-left text-xs
+                            font-medium
+                            text-white
+                            uppercase
+                            tracking-wider
+                          "
+                        >
+                          Kategori
+                        </th>
+                        <th
+                          scope="col"
+                          class="
+                            px-6
+                            py-4
+                            text-left text-xs
+                            font-medium
+                            text-white
+                            uppercase
+                            tracking-wider
+                          "
+                        >
+                          Majelis
+                        </th>
+                        <th
+                          scope="col"
+                          class="
+                            px-6
+                            py-3
+                            text-left text-xs
+                            font-medium
+                            text-white
+                            uppercase
+                            tracking-wider
+                          "
+                        >
+                          Aksi
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                      <tr>
+                        <td class="px-6 py-4">1</td>
+                        <td class="px-6 py-4">Memperingati 1 Muharam</td>
+                        <td class="px-6 py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                Odit dolorem doloribus iste. Nulla, 
+                                                beatae eius. Odit, eligendi. Enim, error, 
+                                                sint porro, natus ullam nemo reprehenderit quisquam facilis 
+                                                quo laboriosam iure?</td>
+                        <td class="px-6 py-4">12-02-2020</td>
+                        <td class="px-6 py-4">Aktif</td>
+                        <td
+                          class="
+                            flex
+                            justify-center
+                            px-6
+                            py-4
+                            -mr-9
+                            -ml-20
+                            text-sm
+                            font-medium
+                          "
+                        >
+                          <a
+                            href="#"
+                            class="
+                              text-indigo-600
+                              hover:text-indigo-900
+                              border-2 border-grey-100
+                              rounded-lg
+                              w-8
+                              h-8
+                              flex
+                              items-center
+                              justify-center
+                              mr-2
+                              hover:opacity-60 hover:border-blue-400
+                            "
+                          >
+                            <img src="/public/img/Icon-eye.svg" alt="" />
+                          </a>
+                          <a
+                            href="#"
+                            class="
+                              text-indigo-600
+                              hover:text-indigo-900
+                              border-2 border-grey-100
+                              rounded-lg
+                              w-8
+                              h-8
+                              flex
+                              items-center
+                              justify-center
+                              mr-2
+                              hover:opacity-60 hover:border-pmbgreen-dark
+                            "
+                          >
+                            <img src="/public/img/Icon-edit.svg" alt="" />
+                          </a>
+                          <a
+                            href="#"
+                            class="
+                              text-indigo-600
+                              hover:text-indigo-900
+                              border-2 border-grey-100
+                              rounded-lg
+                              w-8
+                              h-8
+                              flex
+                              items-center
+                              justify-center
+                              hover:opacity-60 hover:border-red-600
+                            "
+                          >
+                            <img src="/public/img/Icon-delete.svg" alt="" />
+                          </a>
+                        </td>
+                      </tr>
+                     
+
+                      <!-- More people... -->
+                    </tbody>
+                  </table>
+                </div>
+                
+                    
+
+                    <!-- More people... -->
+                  </tbody>
+                </table>
+              </div>
+                <div class="flex items-center space-x-1 ml-5 mt-2">
+                  <a
+                    href="#"
+                    class="text-gray-400 rounded-md hover:text-pmbgreen"
+                  >
+                    10
+                  </a>
+                  <a
+                    href="#"
+                    class="text-gray-400 rounded-md hover:text-pmbgreen"
+                  >
+                    15
+                  </a>
+                  <a
+                    href="#"
+                    class="text-gray-400 rounded-md hover:text-pmbgreen"
+                  >
+                    20
+                  </a>
+                  <a
+                    href="#"
+                    class="text-gray-400 rounded-md hover:text-pmbgreen"
+                  >
+                    50
+                  </a>
+                  <a
+                    href="#"
+                    class="text-gray-400 rounded-md hover:text-pmbgreen"
+                  >
+                    100
+                  </a>
+                </div>
+                <div class="bg-pmbgreen-dark h-12 mt-8"></div>
+              </div>
+            </div>
+          </div>
+          <!-- end tabel -->
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="
+        mt-20
+        bg-gradient-to-t
+        from-pmbgreen-dark
+        to-pmbgreen
+        h-40
+        flex
+        items-center
+        justify-center
+      "
+    >
+      <div
+        class="
+          container
+          mx-auto
+          p-4
+          md:p-0
+          text-sm text-center
+          md:text-xl
+          font-medium
+          text-white
+          font-primary
+        "
+      >
+        Copyright 2021 - Penyuluhan Agama Majelis Kota Batam | All Right
+        Reserved
+      </div>
+    </footer>
+  </body>
+</html>
