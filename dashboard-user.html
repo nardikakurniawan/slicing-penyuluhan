@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sistem Penyuluhan</title>
+    <title>Dashboard User</title>
     <link rel="stylesheet" href="/public/css/tailwind.css" />
   </head>
   <body>
@@ -165,7 +165,7 @@
 
         <div class="content w-screen ml-8">
           <a
-            href="/dashboard-majelis-tambah-data.html"
+            href="/dashboard-user-tambah-data-user.html"
             type="button"
             class="
               bg-pmbblue-btn
@@ -182,7 +182,7 @@
             Tambah Penyuluh
           </a>
           <a
-            href="/dashboard-majelis-tambah-data.html"
+            href="/dashboard-tambah-profil.html"
             type="button"
             class="
               bg-pmbblue-btn
@@ -397,7 +397,7 @@
                             <img src="/public/img/Icon-eye.svg" alt="" />
                           </a>
                           <a
-                            href="#"
+                            href="dashboard-user-edit-data-user.html"
                             class="
                               text-indigo-600
                               hover:text-indigo-900
@@ -414,8 +414,8 @@
                           >
                             <img src="/public/img/Icon-edit.svg" alt="" />
                           </a>
-                          <a
-                            href="#"
+                          <button
+                            type="button"
                             class="
                               text-indigo-600
                               hover:text-indigo-900
@@ -428,9 +428,10 @@
                               justify-center
                               hover:opacity-60 hover:border-red-600
                             "
+                            onclick="toggleModal('modal-example-small')"
                           >
                             <img src="/public/img/Icon-delete.svg" alt="" />
-                          </a>
+                          </button>
                         </td>
                       </tr>
                       <tr>
@@ -750,6 +751,155 @@
             </div>
           </div>
           <!-- end tabel -->
+
+          <!-- Modal -->
+<div
+class="
+  hidden
+  overflow-x-hidden overflow-y-auto
+  fixed
+  inset-0
+  z-50
+  outline-none
+  focus:outline-none
+  justify-center
+  items-center
+"
+id="modal-example-small"
+>
+<div class="relative w-auto my-6 mx-auto max-w-sm">
+  <!--content-->
+  <div
+    class="
+      border-0
+      rounded-lg
+      shadow-lg
+      relative
+      flex flex-col
+      w-full
+      bg-white
+      outline-none
+      focus:outline-none
+    "
+  >
+    <!--header-->
+    <div
+      class="
+        flex
+        items-start
+        justify-between
+        p-5
+        border-b border-solid border-gray-200
+        rounded-t
+      "
+    >
+      <h3 class="text-3xl font-semibold">Hapus Data</h3>
+      <button
+        class="
+          p-1
+          ml-auto
+          bg-transparent
+          border-0
+          text-gray-300
+          float-right
+          text-3xl
+          leading-none
+          font-semibold
+          outline-none
+          focus:outline-none
+        "
+        onclick="toggleModal('modal-example-small')"
+      >
+        <span
+          class="
+            bg-transparent
+            h-6
+            w-6
+            text-2xl
+            block
+            outline-none
+            focus:outline-none
+          "
+        >
+          <img src="/public/img/Icon-times.svg" alt="" />
+        </span>
+      </button>
+    </div>
+    <!--body-->
+    <div class="relative p-6 flex-auto">
+      <p class="my-4 text-gray-500 text-lg leading-relaxed">
+        Anda yakin ingin menghapus data ini?
+      </p>
+    </div>
+    <!--footer-->
+    <div
+      class="
+        flex
+        items-center
+        justify-end
+        p-6
+        border-t border-solid border-gray-200
+        rounded-b
+      "
+    >
+      <button
+        class="
+          text-gray-500
+          background-transparent
+          font-bold
+          uppercase
+          px-6
+          py-2
+          text-sm
+          outline-none
+          focus:outline-none
+          mr-1
+          mb-1
+          ease-linear
+          transition-all
+          duration-150
+        "
+        type="button"
+        onclick="toggleModal('modal-example-small')"
+      >
+        Tidak
+      </button>
+      <button
+        class="
+          bg-pmbred-btn
+          hover:bg-pmbred-btn
+          text-white
+          active:bg-purple-600
+          font-bold
+          uppercase
+          text-xs
+          px-4
+          py-2
+          rounded
+          shadow
+          hover:shadow-md
+          outline-none
+          focus:outline-none
+          mr-1
+          mb-1
+          ease-linear
+          transition-all
+          duration-150
+        "
+        type="button"
+        onclick="toggleModal('modal-example-small')"
+      >
+        Hapus
+      </button>
+    </div>
+  </div>
+</div>
+
+</div>
+<div
+            class="hidden opacity-50 fixed inset-0 z-40 bg-black"
+            id="modal-example-small-backdrop"
+          ></div>
         </div>
       </div>
     </section>
@@ -783,5 +933,6 @@
         Reserved
       </div>
     </footer>
+    <script src="/src/js/modal.js"></script>
   </body>
 </html>
