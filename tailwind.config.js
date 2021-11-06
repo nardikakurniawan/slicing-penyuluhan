@@ -26,6 +26,7 @@ module.exports = {
         84: "21rem",
         99: "30rem",
         100: "40rem",
+        670: "70vh",
       },
 
       fontFamily: {

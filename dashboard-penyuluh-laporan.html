@@ -69,7 +69,7 @@
       </nav>
     </section>
 
-    <section class="section-content mt-4 md:mt-10">
+    <section class="section-content mt-4 md:mt-10 h-670">
       <div class="p-4 flex">
         <div class="sidebar w-84">
           <div class="flex justify-center">
@@ -315,8 +315,8 @@
                             font-medium
                           "
                         >
-                          <a
-                            href="dashboard-jadwal-edit-data.html"
+                          <button
+                            type="button"
                             class="
                               border-2 border-grey-100
                               rounded-lg
@@ -328,9 +328,10 @@
                               mr-2
                               hover:opacity-60 hover:border-blue-400
                             "
+                            onclick="toggleModal('modal-example-large')"
                           >
                             <img src="/public/img/Icon-eye.svg" alt="" />
-                          </a>
+                          </button>
                           <a
                             href="dashboard-penyuluh-laporan-edit-data.html"
                             class="
@@ -391,6 +392,208 @@
             </div>
           </div>
           <!-- end tabel -->
+
+          <!-- MODAL DETAIL -->
+          <div
+            class="
+              hidden
+              overflow-x-hidden overflow-y-auto
+              fixed
+              inset-0
+              z-50
+              outline-none
+              focus:outline-none
+              justify-center
+              items-center
+            "
+            id="modal-example-large"
+          >
+            <div class="relative w-auto my-6 mx-auto max-w-6xl">
+              <!--content-->
+              <div
+                class="
+                  border-0
+                  rounded-lg
+                  shadow-lg
+                  relative
+                  flex flex-col
+                  w-full
+                  bg-white
+                  outline-none
+                  focus:outline-none
+                "
+              >
+                <!--header-->
+                <div
+                  class="
+                    flex
+                    items-start
+                    justify-between
+                    p-5
+                    border-b border-solid border-gray-200
+                    rounded-t
+                  "
+                >
+                  <h3 class="text-3xl font-semibold">Laporan Penyuluhan</h3>
+                  <button
+                    class="
+                      p-1
+                      ml-auto
+                      bg-transparent
+                      border-0
+                      text-gray-300
+                      float-right
+                      text-3xl
+                      leading-none
+                      font-semibold
+                      outline-none
+                      focus:outline-none
+                    "
+                    onclick="toggleModal('modal-example-large')"
+                  >
+                    <span
+                      class="
+                        bg-transparent
+                        h-6
+                        w-6
+                        text-2xl
+                        block
+                        outline-none
+                        focus:outline-none
+                      "
+                    >
+                      <img src="/public/img/Icon-times.svg" alt="" />
+                    </span>
+                  </button>
+                </div>
+                <!--body-->
+                <div class="relative p-6 flex-auto">
+                  <table>
+                    <tbody class="my-4 text-gray-500 text-lg leading-relaxed">
+                      <tr>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                          <div class="flex items-center">
+                            <div class="ml-4">
+                              <div class="text-sm font-medium text-gray-900">
+                                Judul
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                          <div class="text-sm text-gray-500">Maulid Nabi</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                          <div class="flex items-center">
+                            <div class="ml-4">
+                              <div class="text-sm font-medium text-gray-900">
+                                Nama Penyuluh
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                          <div class="text-sm text-gray-500">Ulama Batam</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                          <div class="flex items-center">
+                            <div class="ml-4">
+                              <div class="text-sm font-medium text-gray-900">
+                                Tanggal
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                          <div class="text-sm text-gray-500">05-11-2021</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                          <div class="flex items-center">
+                            <div class="ml-4">
+                              <div class="text-sm font-medium text-gray-900">
+                                Jumlah Peserta
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                          <div class="text-sm text-gray-500">100</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                          <div class="flex items-center">
+                            <div class="ml-4">
+                              <div class="text-sm font-medium text-gray-900">
+                                Isi Materi
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="px-6 py-4">
+                          <div class="text-sm text-gray-500">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Veniam dolore cumque maxime dignissimos harum
+                            culpa ex quo expedita labore debitis et voluptatibus
+                            ut rerum impedit inventore ipsum eos ducimus,
+                            dolorem non eius dicta nulla minima? Id neque
+                            officiis dolores enim iure necessitatibus
+                            consequatur ratione. Facilis assumenda deserunt
+                            aliquam earum accusantium?
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!--footer-->
+                <div
+                  class="
+                    flex
+                    items-center
+                    justify-end
+                    p-6
+                    border-t border-solid border-gray-200
+                    rounded-b
+                  "
+                >
+                  <button
+                    class="
+                      text-purple-500
+                      background-transparent
+                      font-bold
+                      uppercase
+                      px-6
+                      py-2
+                      text-sm
+                      outline-none
+                      focus:outline-none
+                      mr-1
+                      mb-1
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    type="button"
+                    onclick="toggleModal('modal-example-large')"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden opacity-50 fixed inset-0 z-40 bg-black"
+            id="modal-example-large-backdrop"
+          ></div>
+          <!-- END MODAL DETAIL -->
         </div>
       </div>
     </section>
@@ -424,5 +627,7 @@
         Reserved
       </div>
     </footer>
+
+    <script type="text/javascript" src="/src/js/modal.js"></script>
   </body>
 </html>
