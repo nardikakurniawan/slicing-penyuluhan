@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda</title>
+    <link rel="stylesheet" href="/public/css/tailwind.css" />
+  </head>
+
+  <body>
+    <div class="">
+      <nav
+        class="
+          bg-gradient-to-t
+          from-pmbgreen-dark
+          to-pmbgreen
+          h-32
+          flex
+          content-center
+        "
+      >
+        <div class="container mx-auto flex items-center justify-between">
+          <div class="flex">
+            <div class="mr-4">
+              <img src="/public/img/logo.png" alt="logo" class="w-27" />
+            </div>
+
+            <div class="">
+              <h1 class="text-white uppercase text-3xl font-primary font-bold">
+                Kementrian Agama Kepri
+              </h1>
+              <h5
+                class="
+                  text-white
+                  uppercase
+                  text-xs
+                  font-primary font-bold
+                  tracking-widest
+                "
+              >
+                Sistem Monitoring Penyuluhan Agama Islam
+              </h5>
+            </div>
+          </div>
+
+          <a href="/login.html" class="flex items-center text-white"
+            ><img
+              src="/public/img/icont-user.svg"
+              alt="icon user"
+              class="mr-4"
+            />
+            Log Out</a
+          >
+        </div>
+      </nav>
+    </div>
+
+    <section class="section-content mt-4 md:mt-10">
+      <div class="p-4 flex">
+        <div class="sidebar w-84">
+          <div class="flex justify-center">
+            <div class="sidebar-heading flex items-center">
+              <img
+                src="/public/img/icon.svg"
+                class="w-14 md:w-20 mr-4"
+                alt=""
+              />
+              <div class="">
+                <h5 class="font-primary font-bold text-lg">Sri Falmi</h5>
+                <p class="font-primary font-bold text-lg">Admin</p>
+              </div>
+            </div>
+          </div>
+          <hr class="border border-gray-300 mt-8 mb-4" />
+
+          <div class="list-group">
+            <a
+              href="/dashboard.html"
+              class="text-primary btn-sidebar mb-4 h-14 active"
+            >
+              <img
+                src="/public/img/beranda.svg"
+                alt=""
+                class="ml-10 w-10 mr-5"
+              />
+              Dashboard
+            </a>
+
+            <a
+              href="/dashboard-user.html"
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/penyuluh.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Penyuluhan
+            </a>
+            <a
+              href="/dashboard-majelis.html"
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/majelis.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Majelis
+            </a>
+            <a
+              href="/dashboard-jadwal.html"
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/jadwal.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Jadwal
+            </a>
+            <a
+              href="/dashboard-berita.html "
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/berita.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Berita
+            </a>
+            <a
+              href="/dashboard-gambar-slide.html "
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/slide.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Gambar Slide
+            </a>
+            <a
+              href="/dashboard-laporan.html"
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/laporan.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Laporan
+            </a>
+          </div>
+        </div>
+
+        <div class="content w-screen ml-8">
+          <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+            <div class="w-full h-80 mt-10 ml-20 rounded shadow-lg text-center">
+              <div class="flex justify-center">
+                <img
+                  class="m-9 mt-3 justify-center"
+                  src="/public/img/chart.svg"
+                  width="300"
+                  alt=""
+                />
+              </div>
+              <p class="text-textB-grafik font-bold">
+                Jumlah Penyuluhan Dalam Setahun
+              </p>
+            </div>
+            <div class="w-full h-80 mt-10 ml-28 rounded shadow-lg text-center">
+              <p class="text-textB-grafik font-bold">Jumlah Majelis Pertahun</p>
+              <div class="flex justify-center">
+                <img
+                  class="m-8 w-4/4 mt-4"
+                  src="/public/img/chart2.svg"
+                  width="290"
+                  alt=""
+                />
+              </div>
+              <div class="-ml-32">
+                <div class="h-80 mt-20 -ml-96 rounded shadow-xl"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

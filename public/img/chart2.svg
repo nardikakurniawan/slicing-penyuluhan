@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="538.645" height="424.706" viewBox="0 0 538.645 424.706">
+  <g id="Line_Chart0" data-name="Line Chart0" transform="translate(303 280.096)">
+    <g id="X_Axis" data-name="X Axis" transform="translate(-303 130.198)">
+      <text id="Jan" transform="translate(10 11)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-9.674" y="0">Jan</tspan></text>
+      <text id="Feb" transform="translate(63.273 11.411)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-10.339" y="0">Feb</tspan></text>
+      <text id="Mar" transform="translate(104.246 11.411)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-10.333" y="0">Mar</tspan></text>
+      <text id="Apr" transform="translate(151.286 11.411)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-9.337" y="0">Apr</tspan></text>
+      <text id="May" transform="translate(198.524 11.411)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-11.335" y="0">May</tspan></text>
+      <text id="Jun" transform="translate(245.616 11.411)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-9.674" y="0">Jun</tspan></text>
+      <text id="Jul" transform="translate(292.76 11.411)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-7.67" y="0">Jul</tspan></text>
+      <text id="Aug" transform="translate(339.831 11.411)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-10.676" y="0">Aug</tspan></text>
+      <text id="Sep" transform="translate(386.933 11.411)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-10.676" y="0">Sep</tspan></text>
+      <text id="Oct" transform="translate(434.181 11.411)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-9.334" y="0">Oct</tspan></text>
+      <text id="Nov" transform="translate(475.011 11.411)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-10.67" y="0">Nov</tspan></text>
+      <text id="Dec" transform="translate(527.645 11)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-10.67" y="0">Dec</tspan></text>
+    </g>
+    <g id="X_Axis_Line" data-name="X Axis Line" transform="translate(-293 124.198)">
+      <line id="Line_16" data-name="Line 16" x2="517.645" fill="none" stroke="#d3d3d3" stroke-width="1"/>
+    </g>
+    <g id="Chart" transform="translate(-298 -280.096)">
+      <g id="m1" transform="translate(0 0)">
+        <path id="Path_5" data-name="Path 5" d="M0,358.2,47.117,213.464l47.117,29.109L141.35,358.2l47.117-104.306,47.117-126.946L282.7,271.681l47.117-86.517,47.117-87.326,47.117,29.109,47.117,63.877L518.283,0" transform="translate(5 5.096)" fill="none" stroke="#0b4177" stroke-width="3"/>
+        <g id="Marks">
+          <g id="Ellipse_50" data-name="Ellipse 50" transform="translate(0 358.294)" fill="#fff" stroke="#000" stroke-width="3">
+            <circle cx="5" cy="5" r="5" stroke="none"/>
+            <circle cx="5" cy="5" r="3.5" fill="none"/>
+          </g>
+          <g id="Ellipse_51" data-name="Ellipse 51" transform="translate(53.273 213.56)" fill="#fff" stroke="#000" stroke-width="3">
+            <circle cx="5" cy="5" r="5" stroke="none"/>
+            <circle cx="5" cy="5" r="3.5" fill="none"/>
+          </g>
+          <g id="Ellipse_52" data-name="Ellipse 52" transform="translate(103.746 242.669)" fill="#fff" stroke="#000" stroke-width="3">
+            <circle cx="5" cy="5" r="5" stroke="none"/>
+            <circle cx="5" cy="5" r="3.5" fill="none"/>
+          </g>
+          <g id="Ellipse_53" data-name="Ellipse 53" transform="translate(141.339 358.294)" fill="#fff" stroke="#000" stroke-width="3">
+            <circle cx="5" cy="5" r="5" stroke="none"/>
+            <circle cx="5" cy="5" r="3.5" fill="none"/>
+          </g>
+          <g id="Ellipse_54" data-name="Ellipse 54" transform="translate(188.452 253.989)" fill="#fff" stroke="#000" stroke-width="3">
+            <circle cx="5" cy="5" r="5" stroke="none"/>
+            <circle cx="5" cy="5" r="3.5" fill="none"/>
+          </g>
+          <g id="Ellipse_55" data-name="Ellipse 55" transform="translate(235.564 127.043)" fill="#fff" stroke="#000" stroke-width="3">
+            <circle cx="5" cy="5" r="5" stroke="none"/>
+            <circle cx="5" cy="5" r="3.5" fill="none"/>
+          </g>
+          <g id="Ellipse_56" data-name="Ellipse 56" transform="translate(282.677 271.777)" fill="#fff" stroke="#000" stroke-width="3">
+            <circle cx="5" cy="5" r="5" stroke="none"/>
+            <circle cx="5" cy="5" r="3.5" fill="none"/>
+          </g>
+          <g id="Ellipse_57" data-name="Ellipse 57" transform="translate(329.79 185.26)" fill="#fff" stroke="#000" stroke-width="3">
+            <circle cx="5" cy="5" r="5" stroke="none"/>
+            <circle cx="5" cy="5" r="3.5" fill="none"/>
+          </g>
+          <g id="Ellipse_58" data-name="Ellipse 58" transform="translate(376.903 97.934)" fill="#fff" stroke="#000" stroke-width="3">
+            <circle cx="5" cy="5" r="5" stroke="none"/>
+            <circle cx="5" cy="5" r="3.5" fill="none"/>
+          </g>
+          <g id="Ellipse_59" data-name="Ellipse 59" transform="translate(414.496 127.043)" fill="#fff" stroke="#000" stroke-width="3">
+            <circle cx="5" cy="5" r="5" stroke="none"/>
+            <circle cx="5" cy="5" r="3.5" fill="none"/>
+          </g>
+          <g id="Ellipse_60" data-name="Ellipse 60" transform="translate(465.011 190.92)" fill="#fff" stroke="#000" stroke-width="3">
+            <circle cx="5" cy="5" r="5" stroke="none"/>
+            <circle cx="5" cy="5" r="3.5" fill="none"/>
+          </g>
+          <g id="Ellipse_61" data-name="Ellipse 61" transform="translate(517.928)" fill="#fff" stroke="#000" stroke-width="3">
+            <circle cx="5" cy="5" r="5" stroke="none"/>
+            <circle cx="5" cy="5" r="3.5" fill="none"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

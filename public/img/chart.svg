@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="521.109" height="417" viewBox="0 0 521.109 417">
+  <g id="Column_Chart8" data-name="Column Chart8" transform="translate(2299.405 5222.242)">
+    <g id="Chart" transform="translate(-2299.367 -5222.242)">
+      <g id="m1">
+        <rect id="Rectangle_693" data-name="Rectangle 693" width="19.925" height="95.065" transform="translate(0 301.936)" fill="#408321"/>
+        <rect id="Rectangle_694" data-name="Rectangle 694" width="19.925" height="253.507" transform="translate(38.189 143.494)" fill="#408321"/>
+        <rect id="Rectangle_695" data-name="Rectangle 695" width="19.925" height="221.818" transform="translate(90.929 175.182)" fill="#408321"/>
+        <rect id="Rectangle_696" data-name="Rectangle 696" width="19.925" height="95.065" transform="translate(136.393 301.936)" fill="#408321"/>
+        <rect id="Rectangle_697" data-name="Rectangle 697" width="19.925" height="209.143" transform="translate(181.857 187.857)" fill="#408321"/>
+        <rect id="Rectangle_698" data-name="Rectangle 698" width="19.925" height="348.571" transform="translate(227.322 48.43)" fill="#408321"/>
+        <rect id="Rectangle_699" data-name="Rectangle 699" width="19.925" height="190.13" transform="translate(272.787 206.871)" fill="#408321"/>
+        <rect id="Rectangle_700" data-name="Rectangle 700" width="19.925" height="285.195" transform="translate(318.251 111.806)" fill="#408321"/>
+        <rect id="Rectangle_701" data-name="Rectangle 701" width="19.925" height="380.26" transform="translate(363.715 16.74)" fill="#408321"/>
+        <rect id="Rectangle_702" data-name="Rectangle 702" width="19.925" height="348.571" transform="translate(409.18 48.43)" fill="#408321"/>
+        <rect id="Rectangle_703" data-name="Rectangle 703" width="19.925" height="278.857" transform="translate(461.92 118.144)" fill="#408321"/>
+        <rect id="Rectangle_704" data-name="Rectangle 704" width="19.925" height="397" transform="translate(500.109)" fill="#408321"/>
+      </g>
+    </g>
+    <g id="X_Axis" data-name="X Axis" transform="translate(-2299.405 -4819.242)">
+      <text id="Jan" transform="translate(10 11)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-9.674" y="0">Jan</tspan></text>
+      <text id="Feb" transform="translate(48.189 11)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-10.339" y="0">Feb</tspan></text>
+      <text id="Mar" transform="translate(100.894 11)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-10.333" y="0">Mar</tspan></text>
+      <text id="Apr" transform="translate(146.479 11)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-9.337" y="0">Apr</tspan></text>
+      <text id="May" transform="translate(191.736 11)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-11.335" y="0">May</tspan></text>
+      <text id="Jun" transform="translate(237.236 11)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-9.674" y="0">Jun</tspan></text>
+      <text id="Jul" transform="translate(282.65 11)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-7.67" y="0">Jul</tspan></text>
+      <text id="Aug" transform="translate(328.182 11)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-10.676" y="0">Aug</tspan></text>
+      <text id="Sep" transform="translate(373.663 11)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-10.676" y="0">Sep</tspan></text>
+      <text id="Oct" transform="translate(418.905 11)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-9.334" y="0">Oct</tspan></text>
+      <text id="Nov" transform="translate(471.92 11)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-10.67" y="0">Nov</tspan></text>
+      <text id="Dec" transform="translate(510.109 11)" fill="#444" font-size="12" font-family="ArialMT, Arial"><tspan x="-10.67" y="0">Dec</tspan></text>
+    </g>
+  </g>
+</svg>
