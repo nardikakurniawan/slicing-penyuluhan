@@ -73,7 +73,7 @@
       <div class="p-4 flex">
         <div class="sidebar w-84">
           <div class="flex justify-center">
-            <a href="/dashboard-profile.html">
+            <a href="#">
               <div class="sidebar-heading flex items-center">
                 <img
                   src="/public/img/icon.svg"
@@ -184,7 +184,7 @@
             Tambah Penyuluh
           </a>
           <a
-            href="/dashboard-dashboard-profile.html"
+            href="/dashboard-profile.html"
             type="button"
             class="
               bg-pmbblue-btn
@@ -705,7 +705,7 @@
                               <img src="/public/img/Icon-edit.svg" alt="" />
                             </a>
                             <button
-                              href="#"
+                              type="button"
                               class="
                                 text-indigo-600
                                 hover:text-indigo-900
@@ -767,7 +767,7 @@
           </div>
           <!-- end tabel -->
 
-          <!-- MODAL DETAIL -->
+          <!-- MODAL DETAIL Penyuluh -->
           <div
             class="
               hidden
@@ -843,125 +843,343 @@
                 <!--body-->
                 <div class="relative p-6 flex-auto">
                   <table>
-                    <tbody class="my-4 text-gray-500 text-lg leading-relaxed">
-                      <tr>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="flex items-center">
-                            <div class="ml-4">
-                              <div class="text-sm font-medium text-gray-900">
-                                Nik
-                              </div>
-                            </div>
+                    <tbody class="my-4 text-gray-100 text-lg leading-relaxed">
+                      <form class="w-4/5 py-10 justify-center">
+                        <div class="md:flex md:items-center mb-6">
+                          <div class="md:w-1/3">
+                            <label
+                              class="
+                                flex
+                                text-pmbgreen-dark
+                                font-bold
+                                md:text-right
+                                mb-1
+                                md:mb-0
+                                pr-4
+                              "
+                              for="email"
+                            >
+                              Nik
+                            </label>
                           </div>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="text-sm text-gray-500">
-                            141234567889876
+                          <div class="md:w-2/3">
+                            <input
+                              class="
+                                flex
+                                -ml-64
+                                bg-gray-200
+                                appearance-none
+                                border-2 border-gray-200
+                                rounded
+                                w-full
+                                md:w-8/12
+                                py-2
+                                px-4
+                                text-gray-700
+                                leading-tight
+                                focus:outline-none
+                                focus:bg-white
+                                focus:border-pmbgreen
+                              "
+                              id="nama"
+                              type="nama"
+                              placeholder="Enter Nik"
+                            />
                           </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="flex items-center">
-                            <div class="ml-4">
-                              <div class="text-sm font-medium text-gray-900">
-                                Nama
-                              </div>
-                            </div>
+                        </div>
+                        <div class="md:flex md:items-center mb-6">
+                          <div class="md:w-1/3">
+                            <label
+                              class="
+                                flex
+                                text-pmbgreen-dark
+                                font-bold
+                                md:text-right
+                                mb-1
+                                md:mb-0
+                                pr-4
+                              "
+                              for="email"
+                            >
+                              Nama
+                            </label>
                           </div>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="text-sm text-gray-500">
-                            Muhammad Fahrizal
+                          <div class="md:w-2/3">
+                            <input
+                              class="
+                                flex
+                                -ml-64
+                                bg-gray-200
+                                appearance-none
+                                border-2 border-gray-200
+                                rounded
+                                w-full
+                                md:w-8/12
+                                py-2
+                                px-4
+                                text-gray-700
+                                leading-tight
+                                focus:outline-none
+                                focus:bg-white
+                                focus:border-pmbgreen
+                              "
+                              id="nama"
+                              type="nama"
+                              placeholder="Enter Nama"
+                            />
                           </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="flex items-center">
-                            <div class="ml-4">
-                              <div class="text-sm font-medium text-gray-900">
-                                Tanggal Lahir
-                              </div>
-                            </div>
+                        </div>
+                        <div class="md:flex md:items-center mb-6">
+                          <div class="md:w-1/3">
+                            <label
+                              class="
+                                flex
+                                text-pmbgreen-dark
+                                font-bold
+                                md:text-right
+                                mb-1
+                                md:mb-0
+                                pr-4
+                              "
+                              for="email"
+                            >
+                              Tanggal Lahir
+                            </label>
                           </div>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="text-sm text-gray-500">05-11-2021</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="flex items-center">
-                            <div class="ml-4">
-                              <div class="text-sm font-medium text-gray-900">
-                                Telepon
-                              </div>
-                            </div>
+                          <div class="md:w-2/3">
+                            <input
+                              class="
+                                flex
+                                -ml-64
+                                bg-gray-200
+                                appearance-none
+                                border-2 border-gray-200
+                                rounded
+                                w-full
+                                md:w-8/12
+                                py-2
+                                px-4
+                                text-gray-700
+                                leading-tight
+                                focus:outline-none
+                                focus:bg-white
+                                focus:border-pmbgreen
+                              "
+                              id="nama"
+                              type="nama"
+                              placeholder="Enter Tanggal Lahir"
+                            />
                           </div>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="text-sm text-gray-500">08123456789</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="flex items-center">
-                            <div class="ml-4">
-                              <div class="text-sm font-medium text-gray-900">
-                                Alamat
-                              </div>
-                            </div>
+                        </div>
+                        <div class="md:flex md:items-center mb-6">
+                          <div class="md:w-1/3">
+                            <label
+                              class="
+                                flex
+                                text-pmbgreen-dark
+                                font-bold
+                                md:text-right
+                                mb-1
+                                md:mb-0
+                                pr-4
+                              "
+                              for="email"
+                            >
+                              Telepon
+                            </label>
                           </div>
-                        </td>
-                        <td class="px-6 py-4">
-                          <div class="text-sm text-gray-500">Batam Kota</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="flex items-center">
-                            <div class="ml-4">
-                              <div class="text-sm font-medium text-gray-900">
-                                Status
-                              </div>
-                            </div>
+                          <div class="md:w-2/3">
+                            <input
+                              class="
+                                flex
+                                -ml-64
+                                bg-gray-200
+                                appearance-none
+                                border-2 border-gray-200
+                                rounded
+                                w-full
+                                md:w-8/12
+                                py-2
+                                px-4
+                                text-gray-700
+                                leading-tight
+                                focus:outline-none
+                                focus:bg-white
+                                focus:border-pmbgreen
+                              "
+                              id="nama"
+                              type="nama"
+                              placeholder="Enter Telepon"
+                            />
                           </div>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="text-sm text-gray-500">Aktif</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="flex items-center">
-                            <div class="ml-4">
-                              <div class="text-sm font-medium text-gray-900">
-                                Username
-                              </div>
-                            </div>
+                        </div>
+                        <div class="md:flex md:items-center mb-6">
+                          <div class="md:w-1/3">
+                            <label
+                              class="
+                                flex
+                                text-pmbgreen-dark
+                                font-bold
+                                md:text-right
+                                mb-1
+                                md:mb-0
+                                pr-4
+                              "
+                              for="email"
+                            >
+                              Alamat
+                            </label>
                           </div>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="text-sm text-gray-500">
-                            Muhammad Fahrizal
+                          <div class="md:w-2/3">
+                            <textarea
+                              class="
+                                flex
+                                -ml-64
+                                bg-gray-200
+                                appearance-none
+                                border-2 border-gray-200
+                                rounded
+                                w-full
+                                md:w-8/12
+                                py-2
+                                px-4
+                                text-gray-700
+                                leading-tight
+                                focus:outline-none
+                                focus:bg-white
+                                focus:border-pmbgreen
+                              "
+                            >
+                            </textarea>
                           </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="flex items-center">
-                            <div class="ml-4">
-                              <div class="text-sm font-medium text-gray-900">
-                                Password
-                              </div>
-                            </div>
+                        </div>
+                        <div class="md:flex md:items-center mb-6">
+                          <div class="md:w-1/3">
+                            <label
+                              class="
+                                flex
+                                text-pmbgreen-dark
+                                font-bold
+                                md:text-right
+                                mb-1
+                                md:mb-0
+                                pr-4
+                              "
+                              for="email"
+                            >
+                              Status
+                            </label>
                           </div>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="text-sm text-gray-500">*******</div>
-                        </td>
-                      </tr>
+                          <div class="md:w-2/3">
+                            <input
+                              class="
+                                flex
+                                -ml-64
+                                bg-gray-200
+                                appearance-none
+                                border-2 border-gray-200
+                                rounded
+                                w-full
+                                md:w-8/12
+                                py-2
+                                px-4
+                                text-gray-700
+                                leading-tight
+                                focus:outline-none
+                                focus:bg-white
+                                focus:border-pmbgreen
+                              "
+                              id="nama"
+                              type="nama"
+                              placeholder="Enter Status"
+                            />
+                          </div>
+                        </div>
+                        <div class="md:flex md:items-center mb-6">
+                          <div class="md:w-1/3">
+                            <label
+                              class="
+                                flex
+                                text-pmbgreen-dark
+                                font-bold
+                                md:text-right
+                                mb-1
+                                md:mb-0
+                                pr-4
+                              "
+                              for="email"
+                            >
+                              Username
+                            </label>
+                          </div>
+                          <div class="md:w-2/3">
+                            <input
+                              class="
+                                flex
+                                -ml-64
+                                bg-gray-200
+                                appearance-none
+                                border-2 border-gray-200
+                                rounded
+                                w-full
+                                md:w-8/12
+                                py-2
+                                px-4
+                                text-gray-700
+                                leading-tight
+                                focus:outline-none
+                                focus:bg-white
+                                focus:border-pmbgreen
+                              "
+                              id="email"
+                              type="email"
+                              placeholder="Enter Username"
+                            />
+                          </div>
+                        </div>
+                        <div class="md:flex md:items-center mb-6">
+                          <div class="md:w-1/3">
+                            <label
+                              class="
+                                flex
+                                text-pmbgreen-dark
+                                font-bold
+                                md:text-right
+                                mb-1
+                                md:mb-0
+                                pr-4
+                              "
+                              for="email"
+                            >
+                              Password
+                            </label>
+                          </div>
+                          <div class="md:w-2/3">
+                            <input
+                              class="
+                                flex
+                                -ml-64
+                                bg-gray-200
+                                appearance-none
+                                border-2 border-gray-200
+                                rounded
+                                w-full
+                                md:w-8/12
+                                py-2
+                                px-4
+                                text-gray-700
+                                leading-tight
+                                focus:outline-none
+                                focus:bg-white
+                                focus:border-pmbgreen
+                              "
+                              id="nama"
+                              type="nama"
+                              placeholder="Enter Password"
+                            />
+                          </div>
+                        </div>
+                      </form>
                     </tbody>
                   </table>
                 </div>
@@ -978,10 +1196,12 @@
                 >
                   <button
                     class="
-                      text-purple-500
+                      text-gray-100
                       background-transparent
                       font-bold
                       uppercase
+                      bg-pmbgreen-btn
+                      rounded-md
                       px-6
                       py-2
                       text-sm
@@ -1008,7 +1228,7 @@
           ></div>
           <!-- END MODAL DETAIL -->
 
-          <!-- MODAL DETAIL -->
+          <!-- MODAL DETAIL Admin -->
           <div
             class="
               hidden
@@ -1084,98 +1304,263 @@
                 <!--body-->
                 <div class="relative p-6 flex-auto">
                   <table>
-                    <tbody class="my-4 text-gray-500 text-lg leading-relaxed">
-                      <tr>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="flex items-center">
-                            <div class="ml-4">
-                              <div class="text-sm font-medium text-gray-900">
-                                Nama
-                              </div>
-                            </div>
+                    <tbody class="my-4 text-gray-100 text-lg leading-relaxed">
+                      <form class="w-4/5 py-10 justify-center">
+                        <div class="md:flex md:items-center mb-6">
+                          <div class="md:w-1/3">
+                            <label
+                              class="
+                                flex
+                                text-black
+                                font-bold
+                                md:text-right
+                                mb-1
+                                md:mb-0
+                                pr-4
+                              "
+                              for="nama"
+                            >
+                              Nama
+                            </label>
                           </div>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="text-sm text-gray-500">
-                            Muhammad Fahrizal
+                          <div class="md:w-2/3">
+                            <input
+                              class="
+                                flex
+                                -ml-72
+                                bg-gray-200
+                                appearance-none
+                                border-2 border-gray-200
+                                rounded
+                                w-full
+                                md:w-8/12
+                                py-2
+                                px-4
+                                text-gray-700
+                                leading-tight
+                                focus:outline-none
+                                focus:bg-white
+                                focus:border-pmbgreen
+                              "
+                              id="nama"
+                              type="nama"
+                              placeholder="Enter Nama"
+                            />
                           </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="flex items-center">
-                            <div class="ml-4">
-                              <div class="text-sm font-medium text-gray-900">
-                                Email
-                              </div>
-                            </div>
+                        </div>
+                        <div class="md:flex md:items-center mb-6">
+                          <div class="md:w-1/3">
+                            <label
+                              class="
+                                flex
+                                text-black
+                                font-bold
+                                md:text-right
+                                mb-1
+                                md:mb-0
+                                pr-4
+                              "
+                              for="email"
+                            >
+                              E-mail
+                            </label>
                           </div>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="text-sm text-gray-500">
-                            Fahrizal@gmail.com
+                          <div class="md:w-2/3">
+                            <input
+                              class="
+                                flex
+                                -ml-72
+                                bg-gray-200
+                                appearance-none
+                                border-2 border-gray-200
+                                rounded
+                                w-full
+                                md:w-8/12
+                                py-2
+                                px-4
+                                text-gray-700
+                                leading-tight
+                                focus:outline-none
+                                focus:bg-white
+                                focus:border-pmbgreen
+                              "
+                              id="email"
+                              type="email"
+                              placeholder="Enter E-mail"
+                            />
                           </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="flex items-center">
-                            <div class="ml-4">
-                              <div class="text-sm font-medium text-gray-900">
-                                Telepon
-                              </div>
-                            </div>
+                        </div>
+                        <div class="md:flex md:items-center mb-6">
+                          <div class="md:w-1/3">
+                            <label
+                              class="
+                                flex
+                                text-black
+                                font-bold
+                                md:text-right
+                                mb-1
+                                md:mb-0
+                                pr-4
+                              "
+                              for="number"
+                            >
+                              Telepon
+                            </label>
                           </div>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="text-sm text-gray-500">08123456789</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="flex items-center">
-                            <div class="ml-4">
-                              <div class="text-sm font-medium text-gray-900">
-                                Alamat
-                              </div>
-                            </div>
+                          <div class="md:w-2/3">
+                            <input
+                              class="
+                                flex
+                                -ml-72
+                                bg-gray-200
+                                appearance-none
+                                border-2 border-gray-200
+                                rounded
+                                w-full
+                                md:w-8/12
+                                py-2
+                                px-4
+                                text-gray-700
+                                leading-tight
+                                focus:outline-none
+                                focus:bg-white
+                                focus:border-pmbgreen
+                              "
+                              id="number"
+                              type="nama"
+                              placeholder="Enter Telepon"
+                            />
                           </div>
-                        </td>
-                        <td class="px-6 py-4">
-                          <div class="text-sm text-gray-500">Batam Kota</div>
-                        </td>
-                      </tr>
+                        </div>
+                        <div class="md:flex md:items-center mb-6">
+                          <div class="md:w-1/3">
+                            <label
+                              class="
+                                flex
+                                text-black
+                                font-bold
+                                md:text-right
+                                mb-1
+                                md:mb-0
+                                pr-4
+                              "
+                              for="email"
+                            >
+                              Alamat
+                            </label>
+                          </div>
+                          <div class="md:w-2/3">
+                            <textarea
+                              class="
+                                flex
+                                -ml-72
+                                bg-gray-200
+                                appearance-none
+                                border-2 border-gray-200
+                                rounded
+                                w-full
+                                md:w-8/12
+                                py-2
+                                px-4
+                                text-gray-700
+                                leading-tight
+                                focus:outline-none
+                                focus:bg-white
+                                focus:border-pmbgreen
+                              "
+                              id="nama"
+                              type="nama"
+                              placeholder="Enter Alamat"
+                            >
+                            </textarea>
+                          </div>
+                        </div>
 
-                      <tr>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="flex items-center">
-                            <div class="ml-4">
-                              <div class="text-sm font-medium text-gray-900">
-                                Username
-                              </div>
-                            </div>
+                        <div class="md:flex md:items-center mb-6">
+                          <div class="md:w-1/3">
+                            <label
+                              class="
+                                flex
+                                text-black
+                                font-bold
+                                md:text-right
+                                mb-1
+                                md:mb-0
+                                pr-4
+                              "
+                              for="email"
+                            >
+                              Username
+                            </label>
                           </div>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="text-sm text-gray-500">
-                            Muhammad Fahrizal
+                          <div class="md:w-2/3">
+                            <input
+                              class="
+                                flex
+                                -ml-72
+                                bg-gray-200
+                                appearance-none
+                                border-2 border-gray-200
+                                rounded
+                                w-full
+                                md:w-8/12
+                                py-2
+                                px-4
+                                text-gray-700
+                                leading-tight
+                                focus:outline-none
+                                focus:bg-white
+                                focus:border-pmbgreen
+                              "
+                              id="email"
+                              type="email"
+                              placeholder="Enter Username"
+                            />
                           </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="flex items-center">
-                            <div class="ml-4">
-                              <div class="text-sm font-medium text-gray-900">
-                                Password
-                              </div>
-                            </div>
+                        </div>
+                        <div class="md:flex md:items-center mb-6">
+                          <div class="md:w-1/3">
+                            <label
+                              class="
+                                flex
+                                text-black
+                                font-bold
+                                md:text-right
+                                mb-1
+                                md:mb-0
+                                pr-4
+                              "
+                              for="email"
+                            >
+                              Password
+                            </label>
                           </div>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="text-sm text-gray-500">*******</div>
-                        </td>
-                      </tr>
+                          <div class="md:w-2/3">
+                            <input
+                              class="
+                                flex
+                                -ml-72
+                                bg-gray-200
+                                appearance-none
+                                border-2 border-gray-200
+                                rounded
+                                w-full
+                                md:w-8/12
+                                py-2
+                                px-4
+                                text-gray-700
+                                leading-tight
+                                focus:outline-none
+                                focus:bg-white
+                                focus:border-pmbgreen
+                              "
+                              id="nama"
+                              type="nama"
+                              placeholder="Enter Password"
+                            />
+                          </div>
+                        </div>
+                      </form>
                     </tbody>
                   </table>
                 </div>
@@ -1192,13 +1577,15 @@
                 >
                   <button
                     class="
-                      text-purple-500
+                      text-gray-100
+                      bg-pmbgreen-btn
                       background-transparent
                       font-bold
                       uppercase
                       px-6
                       py-2
                       text-sm
+                      rounded-md
                       outline-none
                       focus:outline-none
                       mr-1
