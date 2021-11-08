@@ -56,15 +56,11 @@
       </nav>
     </div>
 
-    <div class="flex h-screen w-full">
-      <!--Start SideBar-->
-      <section class="section-content mt-4 md:mt-10">
-        <div class="p-4 flex">
-          <div class="sidebar w-84">
-            <!-- <nav>
-              <button>Menu</button>
-            </nav> -->
-            <div class="flex justify-center">
+    <section class="section-content mt-4 md:mt-10">
+      <div class="p-4 flex">
+        <div class="sidebar w-84">
+          <div class="flex justify-center">
+            <a href="/dashboard-profile.html">
               <div class="sidebar-heading flex items-center">
                 <img
                   src="/public/img/icon.svg"
@@ -76,118 +72,118 @@
                   <p class="font-primary font-bold text-lg">Admin</p>
                 </div>
               </div>
-            </div>
-            <hr class="border border-gray-300 mt-8 mb-4" />
+            </a>
+          </div>
+          <hr class="border border-gray-300 mt-8 mb-4" />
 
-            <div class="list-group">
-              <a
-                href="/dashboard.html "
-                class="text-primary btn-sidebar mb-4 h-14"
-              >
+          <div class="list-group">
+            <a
+              href="/dashboard.html"
+              class="text-primary btn-sidebar mb-4 h-14"
+            >
+              <img
+                src="/public/img/beranda.svg"
+                alt=""
+                class="ml-10 w-10 mr-5"
+              />
+              Dashboard
+            </a>
+
+            <a
+              href="/dashboard-user.html"
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/penyuluh.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Penyuluhan
+            </a>
+            <a
+              href="/dashboard-majelis.html"
+              class="text-primary btn-sidebar mb-4 h-14 active"
+              ><img
+                src="/public/img/majelis.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Majelis
+            </a>
+            <a
+              href="/dashboard-jadwal.html"
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/jadwal.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Jadwal
+            </a>
+            <a
+              href="/dashboard-berita.html "
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/berita.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Berita
+            </a>
+            <a
+              href="/dashboard-gambar.html "
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/slide.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Gambar Slide
+            </a>
+            <a
+              href="/dashboard-laporan.html"
+              class="text-primary btn-sidebar mb-4 h-14"
+              ><img
+                src="/public/img/laporan.svg"
+                alt=""
+                class="ml-10 mr-5 w-10"
+              />
+              Laporan
+            </a>
+          </div>
+        </div>
+
+        <div class="content w-screen ml-8">
+          <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+            <div class="w-full h-80 mt-10 ml-20 rounded shadow-lg text-center">
+              <div class="flex justify-center">
                 <img
-                  src="/public/img/beranda.svg"
+                  class="m-9 mt-3 justify-center"
+                  src="/public/img/chart.svg"
+                  width="300"
                   alt=""
-                  class="ml-10 w-10 mr-5"
                 />
-                Dashboard
-              </a>
-
-              <a
-                href="/dashboard.html "
-                class="text-primary btn-sidebar mb-4 h-14"
-                ><img
-                  src="/public/img/penyuluh.svg"
+              </div>
+              <p class="text-textB-grafik font-bold">
+                Jumlah Penyuluhan Dalam Setahun
+              </p>
+            </div>
+            <div class="w-full h-80 mt-10 ml-28 rounded shadow-lg text-center">
+              <p class="text-textB-grafik font-bold">Jumlah Majelis Pertahun</p>
+              <div class="flex justify-center">
+                <img
+                  class="m-8 w-4/4 mt-4"
+                  src="/public/img/chart2.svg"
+                  width="290"
                   alt=""
-                  class="ml-10 mr-5 w-10"
                 />
-                Penyuluhan
-              </a>
-              <a
-                href="/dashboard.html "
-                class="text-primary btn-sidebar mb-4 h-14 active"
-                ><img
-                  src="/public/img/majelis.svg"
-                  alt=""
-                  class="ml-10 mr-5 w-10"
-                />
-                Majelis
-              </a>
-              <a
-                href="/beranda.html "
-                class="text-primary btn-sidebar mb-4 h-14"
-                ><img
-                  src="/public/img/jadwal.svg"
-                  alt=""
-                  class="ml-10 mr-5 w-10"
-                />
-                Jadwal
-              </a>
-              <a
-                href="/dashboard.html "
-                class="text-primary btn-sidebar mb-4 h-14"
-                ><img
-                  src="/public/img/berita.svg"
-                  alt=""
-                  class="ml-10 mr-5 w-10"
-                />
-                Berita
-              </a>
-              <a
-                href="/dashboard.html "
-                class="text-primary btn-sidebar mb-4 h-14"
-                ><img
-                  src="/public/img/slide.svg"
-                  alt=""
-                  class="ml-10 mr-5 w-10"
-                />
-                Gambar Slide
-              </a>
-              <a
-                href="/dashboard.html "
-                class="text-primary btn-sidebar mb-4 h-14"
-                ><img
-                  src="/public/img/laporan.svg"
-                  alt=""
-                  class="ml-10 mr-5 w-10"
-                />
-                Laporan
-              </a>
+              </div>
+              <div class="-ml-32">
+                <div class="h-80 mt-20 -ml-96 rounded shadow-xl"></div>
+              </div>
             </div>
           </div>
-
-          
-        </div>
-      </section>
-      <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
-        <div class="w-full h-80 mt-10 ml-20 rounded shadow-lg text-center">
-          <div class="flex justify-center">
-            <img
-              class="m-9 mt-3 justify-center"
-              src="/public/img/chart.svg"
-              width="300"
-              alt=""
-            />
-          </div>
-          <p class="text-textB-grafik font-bold">
-            Jumlah Penyuluhan Dalam Setahun
-          </p>
-        </div>
-        <div class="w-full h-80 mt-10 ml-28 rounded shadow-lg text-center">
-          <p class="text-textB-grafik font-bold">Jumlah Majelis Pertahun</p>
-          <div class="flex justify-center">
-            <img
-              class="m-8 w-4/4 mt-4"
-              src="/public/img/chart2.svg"
-              width="290"
-              alt=""
-            />
-          </div>
-          <div class="-ml-32">
-            <div class="h-80 mt-20 -ml-96 rounded shadow-xl"></div>
-          </div>
         </div>
       </div>
-      </div>
-    </div>
+    </section>
   </body>
 </html>

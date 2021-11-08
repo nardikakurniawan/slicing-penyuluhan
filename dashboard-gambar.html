@@ -73,23 +73,25 @@
       <div class="p-4 flex">
         <div class="sidebar w-84">
           <div class="flex justify-center">
-            <div class="sidebar-heading flex items-center">
-              <img
-                src="/public/img/icon.svg"
-                class="w-14 md:w-20 mr-4"
-                alt=""
-              />
-              <div class="">
-                <h5 class="font-primary font-bold text-lg">Sri Falmi</h5>
-                <p class="font-primary font-bold text-lg">Admin</p>
+            <a href="/dashboard-profile.html">
+              <div class="sidebar-heading flex items-center">
+                <img
+                  src="/public/img/icon.svg"
+                  class="w-14 md:w-20 mr-4"
+                  alt=""
+                />
+                <div class="">
+                  <h5 class="font-primary font-bold text-lg">Sri Falmi</h5>
+                  <p class="font-primary font-bold text-lg">Admin</p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <hr class="border border-gray-300 mt-8 mb-4" />
 
           <div class="list-group">
             <a
-              href="/dashboard.html "
+              href="/dashboard.html"
               class="text-primary btn-sidebar mb-4 h-14"
             >
               <img
@@ -101,7 +103,7 @@
             </a>
 
             <a
-              href="/dashboard.html "
+              href="/dashboard-user.html"
               class="text-primary btn-sidebar mb-4 h-14"
               ><img
                 src="/public/img/penyuluh.svg"
@@ -111,7 +113,7 @@
               Penyuluhan
             </a>
             <a
-              href="/dashboard.html "
+              href="/dashboard-majelis.html"
               class="text-primary btn-sidebar mb-4 h-14 active"
               ><img
                 src="/public/img/majelis.svg"
@@ -121,7 +123,7 @@
               Majelis
             </a>
             <a
-              href="/dashboard.html "
+              href="/dashboard-jadwal.html"
               class="text-primary btn-sidebar mb-4 h-14"
               ><img
                 src="/public/img/jadwal.svg"
@@ -131,7 +133,7 @@
               Jadwal
             </a>
             <a
-              href="/dashboard.html "
+              href="/dashboard-berita.html "
               class="text-primary btn-sidebar mb-4 h-14"
               ><img
                 src="/public/img/berita.svg"
@@ -141,7 +143,7 @@
               Berita
             </a>
             <a
-              href="/dashboard.html "
+              href="/dashboard-gambar.html "
               class="text-primary btn-sidebar mb-4 h-14"
               ><img
                 src="/public/img/slide.svg"
@@ -151,7 +153,7 @@
               Gambar Slide
             </a>
             <a
-              href="/dashboard.html "
+              href="/dashboard-laporan.html"
               class="text-primary btn-sidebar mb-4 h-14"
               ><img
                 src="/public/img/laporan.svg"
@@ -165,7 +167,7 @@
 
         <div class="content w-screen ml-8">
           <a
-            href="/dashboard-majelis-tambah-data.html"
+            href="/dashboard-gambar-tambah-gambar.html"
             type="button"
             class="
               bg-pmbblue-btn
@@ -308,7 +310,7 @@
                             <img src="/public/img/Icon-eye.svg" alt="" />
                           </a>
                           <a
-                            href="#"
+                            href="/dashboard-gambar-edit-gambar.html"
                             class="
                               text-indigo-600
                               hover:text-indigo-900
@@ -325,8 +327,8 @@
                           >
                             <img src="/public/img/Icon-edit.svg" alt="" />
                           </a>
-                          <a
-                            href="#"
+                          <button
+                            type="button"
                             class="
                               text-indigo-600
                               hover:text-indigo-900
@@ -339,9 +341,10 @@
                               justify-center
                               hover:opacity-60 hover:border-red-600
                             "
+                            onclick="toggleModal('modal-example-small')"
                           >
                             <img src="/public/img/Icon-delete.svg" alt="" />
-                          </a>
+                          </button>
                         </td>
                       </tr>
                       <tr>
@@ -382,7 +385,7 @@
                             <img src="/public/img/Icon-eye.svg" alt="" />
                           </a>
                           <a
-                            href="#"
+                            href="/dashboard-gambar-edit-gambar.html"
                             class="
                               text-indigo-600
                               hover:text-indigo-900
@@ -399,8 +402,8 @@
                           >
                             <img src="/public/img/Icon-edit.svg" alt="" />
                           </a>
-                          <a
-                            href="#"
+                          <button
+                            type="button"
                             class="
                               text-indigo-600
                               hover:text-indigo-900
@@ -413,9 +416,10 @@
                               justify-center
                               hover:opacity-60 hover:border-red-600
                             "
+                            onclick="toggleModal('modal-example-small')"
                           >
                             <img src="/public/img/Icon-delete.svg" alt="" />
-                          </a>
+                          </button>
                         </td>
                       </tr>
                      
@@ -468,6 +472,227 @@
             </div>
           </div>
           <!-- end tabel -->
+
+          <!-- Modal hapus data -->
+<div
+class="
+  hidden
+  overflow-x-hidden overflow-y-auto
+  fixed
+  inset-0
+  z-50
+  outline-none
+  focus:outline-none
+  justify-center
+  items-center
+"
+id="modal-example-small"
+>
+<div class="relative w-auto my-6 mx-auto max-w-sm">
+  <!--content-->
+  <div
+    class="
+      border-0
+      rounded-lg
+      shadow-lg
+      relative
+      flex flex-col
+      w-full
+      bg-white
+      outline-none
+      focus:outline-none
+    "
+  >
+    <!--header-->
+    <div
+      class="
+        flex
+        items-start
+        justify-between
+        p-5
+        border-b border-solid border-gray-200
+        rounded-t
+      "
+    >
+      <h3 class="text-3xl font-semibold">Hapus Data</h3>
+      <button
+        class="
+          p-1
+          ml-auto
+          bg-transparent
+          border-0
+          text-gray-300
+          float-right
+          text-3xl
+          leading-none
+          font-semibold
+          outline-none
+          focus:outline-none
+        "
+        onclick="toggleModal('modal-example-small')"
+      >
+        <span
+          class="
+            bg-transparent
+            h-6
+            w-6
+            text-2xl
+            block
+            outline-none
+            focus:outline-none
+          "
+        >
+          <img src="/public/img/Icon-times.svg" alt="" />
+        </span>
+      </button>
+    </div>
+    <!--body-->
+    <div class="relative p-6 flex-auto">
+      <p class="my-4 text-gray-500 text-lg leading-relaxed">
+        Anda yakin ingin menghapus data ini?
+      </p>
+    </div>
+    <!--footer-->
+    <div
+      class="
+        flex
+        items-center
+        justify-end
+        p-6
+        border-t border-solid border-gray-200
+        rounded-b
+      "
+    >
+      <button
+        class="
+          text-gray-500
+          background-transparent
+          font-bold
+          uppercase
+          px-6
+          py-2
+          text-sm
+          outline-none
+          focus:outline-none
+          mr-1
+          mb-1
+          ease-linear
+          transition-all
+          duration-150
+        "
+        type="button"
+        onclick="toggleModal('modal-example-small')"
+      >
+        Tidak
+      </button>
+      <button
+        class="
+          bg-pmbred-btn
+          hover:bg-pmbred-btn
+          text-white
+          active:bg-purple-600
+          font-bold
+          uppercase
+          text-xs
+          px-4
+          py-2
+          rounded
+          shadow
+          hover:shadow-md
+          outline-none
+          focus:outline-none
+          mr-1
+          mb-1
+          ease-linear
+          transition-all
+          duration-150
+        "
+        type="button"
+        onclick="toggleModal('modal-example-small')"
+      >
+        Hapus
+      </button>
+    </div>
+  </div>
+</div>
+
+</div>
+<div
+            class="hidden opacity-50 fixed inset-0 z-40 bg-black"
+            id="modal-example-small-backdrop"
+          ></div>
+          <div
+          class="
+            hidden
+            overflow-x-hidden overflow-y-auto
+            fixed
+            inset-0
+            z-50
+            outline-none
+            focus:outline-none
+            justify-center
+            items-center
+          "
+          id="modal-example-small"
+          >
+          <div class="relative w-auto my-6 mx-auto max-w-sm">
+            <!--content-->
+            <div
+              class="
+                border-0
+                rounded-lg
+                shadow-lg
+                relative
+                flex flex-col
+                w-full
+                bg-white
+                outline-none
+                focus:outline-none
+              "
+            >
+              <!--header-->
+              <div
+                class="
+                  flex
+                  items-start
+                  justify-between
+                  p-5
+                  border-b border-solid border-gray-200
+                  rounded-t
+                "
+              >
+                <h3 class="text-3xl font-semibold">Data User</h3>
+                <button
+                  class="
+                    p-1
+                    ml-auto
+                    bg-transparent
+                    border-0
+                    text-gray-300
+                    float-right
+                    text-3xl
+                    leading-none
+                    font-semibold
+                    outline-none
+                    focus:outline-none
+                  "
+                  onclick="toggleModal('modal-example-small')"
+                >
+                  <span
+                    class="
+                      bg-transparent
+                      h-6
+                      w-6
+                      text-2xl
+                      block
+                      outline-none
+                      focus:outline-none
+                    "
+                  >
+                    <img src="/public/img/Icon-times.svg" alt="" />
+                  </span>
+                </button>
+              </div>
         </div>
       </div>
     </section>
@@ -501,5 +726,6 @@
         Reserved
       </div>
     </footer>
+    <script src="/src/js/modal.js"></script>
   </body>
 </html>
