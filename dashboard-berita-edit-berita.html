@@ -221,7 +221,7 @@
                       md:mb-0
                       pr-4
                     "
-                    for="email"
+                    for="nama"
                   >
                     Isi
                   </label>
@@ -241,9 +241,9 @@
                       leading-tight
                       focus:outline-none focus:bg-white focus:border-pmbgreen
                     "
-                    id="email"
-                    type="email"
-                    value="Kultum"
+                    id="nama"
+                    type="nama"
+                    placeholder="Enter isi"
                   />
                 </div>
               </div>
@@ -265,7 +265,7 @@
                     Kategori
                   </label>
                 </div>
-                <div class="md:w-2/3">
+                <div class="md:w-2/3 flex">
                   <select
                     class="w-2/3 border bg-white rounded px-3 py-2 outline-none"
                   >
@@ -273,6 +273,24 @@
                     <option class="py-1">Maulid Nabi</option>
                     <option class="py-1">Peringatan 1 Muharam</option>
                   </select>
+                  <div class="ml-2">
+                    <button
+                      type="button"
+                      class="
+                        border-2
+                        bg-pmbgreen-btn
+                        rounded-lg
+                        w-10
+                        h-10
+                        flex
+                        justify-center
+                        hover:opacity-60
+                      "
+                      onclick="toggleModal('modal-example-tambah')"
+                    >
+                      <img src="/public/img/icon-tambah.svg" alt="" />
+                    </button>
+                  </div>
                 </div>
               </div>
 
@@ -361,6 +379,173 @@
       </div>
     </section>
 
+    <!-- MODAL DETAIL -->
+    <div
+      class="
+        hidden
+        overflow-x-hidden overflow-y-auto
+        fixed
+        inset-0
+        z-50
+        outline-none
+        focus:outline-none
+        justify-center
+        items-center
+      "
+      id="modal-example-tambah"
+    >
+      <div class="relative w-screen my-6 mx-auto max-w-6xl">
+        <!--content-->
+        <div
+          class="
+            border-0
+            rounded-lg
+            shadow-lg
+            relative
+            flex flex-col
+            w-full
+            bg-white
+            outline-none
+            focus:outline-none
+          "
+        >
+          <!--header-->
+          <div
+            class="
+              flex
+              items-start
+              justify-between
+              p-5
+              border-b border-solid border-gray-200
+              rounded-t
+            "
+          >
+            <h3 class="text-3xl font-semibold">Edit Kategori Berita</h3>
+            <button
+              class="
+                p-1
+                ml-auto
+                bg-transparent
+                border-0
+                text-gray-300
+                float-right
+                text-3xl
+                leading-none
+                font-semibold
+                outline-none
+                focus:outline-none
+              "
+              onclick="toggleModal('modal-example-tambah')"
+            >
+              <span
+                class="
+                  bg-transparent
+                  h-6
+                  w-6
+                  text-2xl
+                  block
+                  outline-none
+                  focus:outline-none
+                "
+              >
+                <img src="/public/img/Icon-times.svg" alt="" />
+              </span>
+            </button>
+          </div>
+          <!--body-->
+          <div class="relative p-6 flex-auto">
+            <table>
+              <tbody class="my-4 text-gray-100 text-lg leading-relaxed">
+                <form class="w-4/5 py-10 justify-center">
+                  <div class="md:flex md:items-center mb-6">
+                    <div class="md:w-1/3">
+                      <label
+                        class="
+                          block
+                          text-pmbgreen-dark
+                          font-bold
+                          md:text-right
+                          mb-1
+                          md:mb-0
+                          pr-4
+                        "
+                        for="email"
+                      >
+                        Kategori
+                      </label>
+                    </div>
+                    <div class="md:w-2/3">
+                      <input
+                        class="
+                          bg-gray-200
+                          appearance-none
+                          border-2 border-gray-200
+                          rounded
+                          w-full
+                          md:w-8/12
+                          py-2
+                          px-4
+                          text-gray-700
+                          leading-tight
+                          focus:outline-none
+                          focus:bg-white
+                          focus:border-pmbgreen
+                        "
+                        id="email"
+                        type="email"
+                        placeholder="Enter Kategori"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </tbody>
+            </table>
+          </div>
+          <!--footer-->
+          <div
+            class="
+              flex
+              items-center
+              justify-end
+              p-6
+              border-t border-solid border-gray-200
+              rounded-b
+            "
+          >
+            <button
+              class="
+                text-gray-100
+                background-transparent
+                font-bold
+                uppercase
+                bg-pmbgreen-btn
+                px-6
+                py-2
+                text-sm
+                outline-none
+                focus:outline-none
+                mr-1
+                mb-1
+                rounded-md
+                ease-linear
+                transition-all
+                duration-150
+              "
+              type="button"
+              onclick="toggleModal('modal-example-tambah')"
+            >
+              Simpan
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="hidden opacity-50 fixed inset-0 z-40 bg-black"
+      id="modal-example-tambah-backdrop"
+    ></div>
+    <!-- END MODAL DETAIL -->
+
     <footer
       class="
         mt-20
@@ -390,5 +575,6 @@
         Reserved
       </div>
     </footer>
+    <script src="/src/js/modal.js"></script>
   </body>
 </html>

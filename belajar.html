@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>belajar</title>
+    <link rel="stylesheet" href="/public/css/tailwind.css" />
+
+    <style>
+      body {
+        margin: 0px;
+        height: 100vh;
+        background: #feffff;
+      }
+      .center {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .form-input {
+        background: rgb(252, 252, 252);
+        box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377),
+          3px 3px 7px rgba(94, 104, 121, 0.377);
+      }
+      .form-input label {
+        display: block;
+        width: 45%;
+        height: 45px;
+        margin-left: 25%;
+        margin-top: 25%;
+        line-height: 50px;
+        text-align: center;
+        color: rgb(29, 9, 9);
+        font-size: 15px;
+        font-family: "Open Sans", sans-serif;
+        text-transform: Uppercase;
+        font-weight: 600;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .form-input img {
+        width: 100%;
+        display: none;
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="center">
+      <div class="form-input">
+        <div class="preview w-44 h-44">
+          <img id="file-ip-1-preview" class="w-full h-full" />
+        </div>
+
+        <input
+          class=""
+          type="file"
+          id="file-ip-1"
+          accept="image/*"
+          onchange="showPreview(event);"
+        />
+      </div>
+    </div>
+    <script type="text/javascript">
+      function showPreview(event) {
+        if (event.target.files.length > 0) {
+          var src = URL.createObjectURL(event.target.files[0]);
+          var preview = document.getElementById("file-ip-1-preview");
+          preview.src = src;
+          preview.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
