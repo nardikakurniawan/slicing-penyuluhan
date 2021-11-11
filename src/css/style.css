@@ -183,14 +183,16 @@ fahri .btn-sidebar {
 }
 .wrapper .image {
   position: absolute;
-  height: 300%;
+  height: 100%;
   width: 100%;
   display: flex;
-  object-fit: cover;
-  object-position: center;
   align-items: center;
   justify-content: center;
+}
+
+.wrapper .image img {
   object-fit: cover;
+  object-position: center;
 }
 /* .wrapper .image img {
   height: 100%;

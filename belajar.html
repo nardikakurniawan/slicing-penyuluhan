@@ -8,71 +8,97 @@
     <link rel="stylesheet" href="/public/css/tailwind.css" />
 
     <style>
-      body {
-        margin: 0px;
-        height: 100vh;
-        background: #feffff;
-      }
-      .center {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .form-input {
-        background: rgb(252, 252, 252);
-        box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377),
-          3px 3px 7px rgba(94, 104, 121, 0.377);
-      }
-      .form-input label {
-        display: block;
-        width: 45%;
-        height: 45px;
-        margin-left: 25%;
-        margin-top: 25%;
-        line-height: 50px;
-        text-align: center;
-        color: rgb(29, 9, 9);
-        font-size: 15px;
-        font-family: "Open Sans", sans-serif;
-        text-transform: Uppercase;
-        font-weight: 600;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      .form-input img {
-        width: 100%;
-        display: none;
-        margin-bottom: 30px;
-      }
+     /* body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    font-family: roboto;
+} */
+.container{
+  height: 550px;
+  width: 430px;
+
+}
+.container .wrapperr {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  border: 2px dashed #c2cdda;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.wrapperr .image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.wrapperr .text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #5b5b7b;
+}
+.wrapperr .icon {
+  width: 100px;
+}
+.container #custom-btn {
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+  display: block;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
     </style>
   </head>
 
   <body>
-    <div class="center">
-      <div class="form-input">
-        <div class="preview w-44 h-44">
-          <img id="file-ip-1-preview" class="w-full h-full" />
+    <div class="container">
+      <div class="wrapperr">
+        <div class="content">
+          <div class="icon"><img src="public/img/download.png" alt="" /></div>
+          <div class="text">No file chosen, yes!</div>
         </div>
-
-        <input
-          class=""
-          type="file"
-          id="file-ip-1"
-          accept="image/*"
-          onchange="showPreview(event);"
-        />
+        <label class="image ">
+          <img id="file-ip-1-preview"  />
+          
+          <input
+            class="hidden "
+            type="file"
+            id="file-ip-1"
+            accept="image/*"
+            onchange="showPreview(event);"
+          />
+        </label>
       </div>
+      <button type="button" id="custom-btn" class="bg-pmbblue-btn
+      ">Upload</button>
     </div>
-    <script type="text/javascript">
-      function showPreview(event) {
-        if (event.target.files.length > 0) {
-          var src = URL.createObjectURL(event.target.files[0]);
-          var preview = document.getElementById("file-ip-1-preview");
-          preview.src = src;
-          preview.style.display = "block";
-        }
+  <script type="text/javascript">
+    function showPreview(event) {
+      if (event.target.files.length > 0) {
+        var src = URL.createObjectURL(event.target.files[0]);
+        var preview = document.getElementById("file-ip-1-preview");
+        preview.src = src;
+        preview.style.display = "block";
       }
-    </script>
+    }
+  </script>
+</body>
   </body>
 </html>
