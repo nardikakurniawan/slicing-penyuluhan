@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Penyuluhan</title>
+    <link rel="stylesheet" href="/public/css/tailwind.css" />
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <div
+        class="
+          relative
+          w-80
+          h-80
+          mt-5
+          overflow-hidden
+          rounded-xl
+          border-dashed border-4 border-gray-200
+        "
+      >
+        <div class="content flex justify-center items-center h-full">
+          <div class="icon">
+            <img src="public/img/download.png" alt="" class="w-44" />
+            <div class="text-center text-base text-gray-300">
+              Silahkan pilih file!
+            </div>
+          </div>
+        </div>
+        <label class="image absolute top-0 h-full w-full cursor-pointer">
+          <img
+            id="file-ip-1-preview"
+            class="w-full h-full object-cover object-center hidden"
+          />
+          <input
+            class="hidden"
+            type="file"
+            id="file-ip-1"
+            accept="image/*"
+            onchange="showPreview(event);"
+          />
+        </label>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function showPreview(event) {
+        if (event.target.files.length > 0) {
+          var src = URL.createObjectURL(event.target.files[0]);
+          var preview = document.getElementById("file-ip-1-preview");
+          preview.src = src;
+          preview.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

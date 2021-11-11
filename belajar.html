@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/public/css/tailwind.css" />
 
     <style>
-     /* body{
+      /* body{
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -17,14 +17,14 @@
     position: absolute;
     font-family: roboto;
 } */
-.container{
+      /* .container{
   height: 550px;
   width: 430px;
 
 }
 .container .wrapperr {
   position: relative;
-  height: 300px;
+  height: 400px;
   width: 100%;
   border: 2px dashed #c2cdda;
   border-radius: 10px;
@@ -39,6 +39,13 @@
     height: 100%;
     width: 100%;
     display: block;
+}
+
+.wrapperr .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 .wrapperr .text {
   font-size: 20px;
@@ -63,22 +70,38 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
-}
+} */
     </style>
   </head>
 
   <body>
-    <div class="container">
-      <div class="wrapperr">
-        <div class="content">
-          <div class="icon"><img src="public/img/download.png" alt="" /></div>
-          <div class="text">No file chosen, yes!</div>
+    <div class="container mx-auto">
+      <div
+        class="
+          relative
+          w-80
+          h-80
+          mt-5
+          overflow-hidden
+          rounded-xl
+          border-dashed border-4 border-gray-200
+        "
+      >
+        <div class="content flex justify-center items-center h-full">
+          <div class="icon">
+            <img src="public/img/download.png" alt="" class="w-44" />
+            <div class="text-center text-base text-gray-300">
+              Silahkan pilih file!
+            </div>
+          </div>
         </div>
-        <label class="image ">
-          <img id="file-ip-1-preview"  />
-          
+        <label class="image absolute top-0 h-full w-full cursor-pointer">
+          <img
+            id="file-ip-1-preview"
+            class="w-full h-full object-cover object-center hidden"
+          />
           <input
-            class="hidden "
+            class="hidden"
             type="file"
             id="file-ip-1"
             accept="image/*"
@@ -86,19 +109,44 @@
           />
         </label>
       </div>
-      <button type="button" id="custom-btn" class="bg-pmbblue-btn
-      ">Upload</button>
+      <button type="button" id="custom-btn" class="bg-pmbblue-btn mt-10">
+        Upload
+      </button>
     </div>
-  <script type="text/javascript">
-    function showPreview(event) {
-      if (event.target.files.length > 0) {
-        var src = URL.createObjectURL(event.target.files[0]);
-        var preview = document.getElementById("file-ip-1-preview");
-        preview.src = src;
-        preview.style.display = "block";
+
+    <!-- 
+    <div class="container">
+      <div class="wrapperr">
+        <div class="content">
+          <div class="icon"><img src="public/img/download.png" alt="" /></div>
+          <div class="text">No file chosen, yes!</div>
+        </div>
+        <label class="image">
+          <img id="file-ip-1-preview" />
+
+          <input
+            class="hidden"
+            type="file"
+            id="file-ip-1"
+            accept="image/*"
+            onchange="showPreview(event);"
+          />
+        </label>
+      </div>
+      <button type="button" id="custom-btn" class="bg-pmbblue-btn">
+        Upload
+      </button>
+    </div> -->
+
+    <script type="text/javascript">
+      function showPreview(event) {
+        if (event.target.files.length > 0) {
+          var src = URL.createObjectURL(event.target.files[0]);
+          var preview = document.getElementById("file-ip-1-preview");
+          preview.src = src;
+          preview.style.display = "block";
+        }
       }
-    }
-  </script>
-</body>
+    </script>
   </body>
 </html>
