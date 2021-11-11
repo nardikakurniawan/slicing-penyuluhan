@@ -165,9 +165,9 @@
           </div>
         </div>
 
-        <div class="content md:flex w-screen ml-8">
-          <div class="md:w-full flex justify-center shadow-md">
-            <form class="w-4/5 py-10 justify-center">
+        <div class="content md:flex h-screen w-screen ml-8">
+          <div class="md:w-full md:h-5/6 flex justify-center shadow-md">
+            <form class="w-4/5  py-10 justify-center">
               <div class="font-primary  mb-12 text-2xl font-bold my-2">
                 Tambah Data User
               </div>
@@ -486,40 +486,41 @@
             
             <div
             class="
-              md:mt-0 md:ml-10 md:w-3/12
-              flex
-              items-center
+              relative
+              w-80
+              h-80
+              -mt-464
+              block
+              ml-auto
+              overflow-hidden
+              rounded-xl
+              border-dashed border-4 border-gray-200
             "
           >
-            <div class="w-full text-center -mt-100 ml-670">
-              <h1 class="font-primary font-bold text-xl ml-14 mb-3">Foto</h1>
-                  <div class="containerr">
-                    <div class="wrapper">
-                      <div class="content">
-                        <div class="icon"><img src="public/img/download.png" alt="" /></div>
-                        <div class="text">No file chosen, yes!</div>
-                      </div>
-                      <label class="image ">
-                        <img id="file-ip-1-preview"  />
-                        
-                        <input
-                          class="hidden "
-                          type="file"
-                          id="file-ip-1"
-                          accept="image/*"
-                          onchange="showPreview(event);"
-                        />
-                      </label>
-                    </div>
-                    <button type="button" id="custom-btn" class="bg-pmbblue-btn
-                    ">Upload</button>
-                  </div>
-            </div>
-        </div>
+            <div class="content flex justify-center items-center  h-full">
+              <div class="icon">
+                <img src="public/img/download.png" alt="" class="w-44" />
+                <div class="text-center text-base text-gray-300">
+                  Silahkan pilih file!
+                </div>
               </div>
-            </form>
+            </div>
+            <label class="image absolute top-0 h-full w-full cursor-pointer">
+              <img
+                id="file-ip-1-preview"
+                class="w-full h-full object-cover object-center hidden"
+              />
+              <input
+                class="hidden"
+                type="file"
+                id="file-ip-1"
+                accept="image/*"
+                onchange="showPreview(event);"
+              />
+            </label>
           </div>
-          
+            </form>
+          </div> 
       </div>
     </section>
     <footer
